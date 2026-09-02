@@ -1,4 +1,4 @@
-﻿# Architecture Decision Records
+# Architecture Decision Records
 
 This directory contains Atlazora Architecture Decision Records (ADRs).
 
@@ -67,3 +67,15 @@ Example:
 The initial ADR baseline contains exactly 22 Accepted decisions.
 
 Future changes must follow the lifecycle rules above. Existing ADRs are preserved as historical records and are superseded rather than deleted when decisions change.
+
+## Additional Accepted ADRs Formalized During W00-WU01
+
+The Phase 01–13 preservation audit identified additional architectural decisions that were already approved in planning and architecture documentation but were not yet represented as standalone ADRs.
+
+| ADR | Decision | Status |
+|---|---|---|
+| ADR-0023 | Accepted commercial terms are immutable historical truth | Accepted |
+| ADR-0024 | Order, Payment, and Shipment have separate domain ownership | Accepted |
+| ADR-0025 | Admin and Operations use approved application boundaries | Accepted |
+
+These ADRs formalize existing approved decisions; they do not introduce new planning scope.
