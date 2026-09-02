@@ -1,4 +1,4 @@
-# Phase 09 — Implementation Roadmap
+# Phase 09 â€” Implementation Roadmap
 
 ## Status
 
@@ -12,7 +12,7 @@ Planning is organized into Phases.
 
 Implementation is executed through:
 
-**Phase → Wave → Work Unit → Task**
+**Phase â†’ Wave â†’ Work Unit â†’ Task**
 
 The authoritative preservation source is:
 
@@ -61,23 +61,23 @@ A side task may proceed only when the primary Work Unit is genuinely blocked and
 
 The approved prioritization vocabulary is:
 
-### P0 — Blocking / Critical
+### P0 â€” Blocking / Critical
 
 Required immediately because execution, correctness, security, data integrity, or release safety cannot proceed without it.
 
-### P1 — High
+### P1 â€” High
 
 Required for the current Wave/capability and materially important to V1 correctness or completion.
 
-### P2 — Normal
+### P2 â€” Normal
 
 Required work that should be completed in normal roadmap order but is not currently blocking.
 
-### P3 — Lower / Improvement
+### P3 â€” Lower / Improvement
 
 Useful improvement that may be scheduled after higher-priority V1 requirements.
 
-### P4 — Future / Optional
+### P4 â€” Future / Optional
 
 Future, experimental, advanced, or non-V1 work unless evidence promotes it.
 
@@ -87,52 +87,52 @@ Priority does not override architectural foundations or release/security gates.
 
 The approved execution order is:
 
-- W00 — Engineering Foundation
-- W01 — Identity & Organizations
-- W02 — Supplier & Verification
-- W03 — Catalog
-- W04 — Offers
-- W05 — Search & Discovery
-- W06 — RFQ / Quotes / Messaging
-- W07 — Orders & Samples
-- W08 — Payments / Finance / Protection
-- W09 — Logistics
-- W10 — Inspection
-- W11 — Disputes / Completion
-- W12 — Reviews / Reputation
-- W13 — Monetization
-- W14 — Platform Completion
-- W15 — Legacy Final Migration
-- W16 — Cutover Readiness
-- W17 — Legacy Retirement
+- W00 â€” Engineering Foundation
+- W01 â€” Identity & Organizations
+- W02 â€” Supplier & Verification
+- W03 â€” Catalog
+- W04 â€” Offers
+- W05 â€” Search & Discovery
+- W06 â€” RFQ / Quotes / Messaging
+- W07 â€” Orders & Samples
+- W08 â€” Payments / Finance / Protection
+- W09 â€” Logistics
+- W10 â€” Inspection
+- W11 â€” Disputes / Completion
+- W12 â€” Reviews / Reputation
+- W13 â€” Monetization
+- W14 â€” Platform Completion
+- W15 â€” Legacy Final Migration
+- W16 â€” Cutover Readiness
+- W17 â€” Legacy Retirement
 
 Wave ordering communicates the implementation progression.
 
 It does not authorize violating domain dependencies or omitting a foundation required earlier.
 
-## W00 — Engineering Foundation
+## W00 â€” Engineering Foundation
 
 W00 establishes the engineering platform required for safe feature implementation.
 
 Approved Work Units:
 
-1. W00-WU01 — Project Governance & Repositories
-2. W00-WU02 — Local Development Platform
-3. W00-WU03 — Go Core Foundation
-4. W00-WU04 — Contracts Foundation
-5. W00-WU05 — Event & Outbox Foundation
-6. W00-WU06 — Python Intelligence Foundation
-7. W00-WU07 — Web Foundation
-8. W00-WU08 — Admin Foundation
-9. W00-WU09 — Infrastructure Foundation
-10. W00-WU10 — CI/CD & Supply Chain
-11. W00-WU11 — Observability Foundation
-12. W00-WU12 — Security Baseline
-13. W00-WU13 — Foundation Integration Test
+1. W00-WU01 â€” Project Governance & Repositories
+2. W00-WU02 â€” Local Development Platform
+3. W00-WU03 â€” Go Core Foundation
+4. W00-WU04 â€” Contracts Foundation
+5. W00-WU05 â€” Event & Outbox Foundation
+6. W00-WU06 â€” Python Intelligence Foundation
+7. W00-WU07 â€” Web Foundation
+8. W00-WU08 â€” Admin Foundation
+9. W00-WU09 â€” Infrastructure Foundation
+10. W00-WU10 â€” CI/CD & Supply Chain
+11. W00-WU11 â€” Observability Foundation
+12. W00-WU12 â€” Security Baseline
+13. W00-WU13 â€” Foundation Integration Test
 
-W00-WU01 remains the only primary `IN_PROGRESS` Work Unit until its complete Definition of Done and Final Handoff pass.
+W00-WU01 is COMPLETE with its Definition of Done and Final Handoff recorded. W00-WU02 is in `REVIEW` pending final GitHub Governance Validation evidence. No primary Work Unit is currently `IN_PROGRESS`; W00-WU03 remains `PLANNED` until W00-WU02 formally reaches `COMPLETE`.
 
-## W00-WU01 — Project Governance & Repositories
+## W00-WU01 â€” Project Governance & Repositories
 
 Establish:
 
@@ -146,71 +146,71 @@ Establish:
 - GitHub execution governance.
 - approved planning preservation.
 
-## W00-WU02 — Local Development Platform
+## W00-WU02 â€” Local Development Platform
 
 Establish a reproducible local development platform for the target repositories and required local dependencies.
 
 The local platform must support the actual architecture rather than creating a disposable environment that hides production-relevant integration behavior.
 
-## W00-WU03 — Go Core Foundation
+## W00-WU03 â€” Go Core Foundation
 
 Establish the Go transactional Core foundation including approved project/module structure and foundational application/runtime conventions.
 
 It must preserve domain ownership and the approved modular-first architecture.
 
-## W00-WU04 — Contracts Foundation
+## W00-WU04 â€” Contracts Foundation
 
 Establish versioned OpenAPI/event/shared-contract foundations in `atlazora-contracts`.
 
 Contract validation and compatibility become part of normal engineering workflow.
 
-## W00-WU05 — Event & Outbox Foundation
+## W00-WU05 â€” Event & Outbox Foundation
 
 Establish the foundational Transactional Outbox and idempotent asynchronous integration model.
 
 The exact event broker remains an explicit decision until resolved through the appropriate engineering decision process.
 
-## W00-WU06 — Python Intelligence Foundation
+## W00-WU06 â€” Python Intelligence Foundation
 
 Establish the Python intelligence/data engineering foundation.
 
 The boundary must preserve the rule that Python intelligence does not directly mutate Core-owned transactional truth.
 
-## W00-WU07 — Web Foundation
+## W00-WU07 â€” Web Foundation
 
 Establish the Vue 3 + TypeScript Marketplace/Buyer/Supplier application foundation.
 
-## W00-WU08 — Admin Foundation
+## W00-WU08 â€” Admin Foundation
 
 Establish the Vue 3 + TypeScript Admin/Operations application foundation.
 
 Admin operates through approved APIs/domain behavior rather than direct database manipulation.
 
-## W00-WU09 — Infrastructure Foundation
+## W00-WU09 â€” Infrastructure Foundation
 
 Establish the initial Terraform/GCP infrastructure foundation consistent with the approved infrastructure architecture.
 
 Production-ready foundations do not require Production-size spending.
 
-## W00-WU10 — CI/CD & Supply Chain
+## W00-WU10 â€” CI/CD & Supply Chain
 
 Establish CI/CD and applicable software supply-chain controls.
 
 Build once and promote immutable artifacts.
 
-## W00-WU11 — Observability Foundation
+## W00-WU11 â€” Observability Foundation
 
 Establish foundational logs, metrics, correlation/tracing where applicable, health visibility, and operational diagnostics.
 
 Exact numeric SLOs remain open until formally approved.
 
-## W00-WU12 — Security Baseline
+## W00-WU12 â€” Security Baseline
 
 Establish the engineering security baseline required before feature Waves depend on it.
 
 Security remains integrated into every later Work Unit rather than being completed once and forgotten.
 
-## W00-WU13 — Foundation Integration Test
+## W00-WU13 â€” Foundation Integration Test
 
 Verify the W00 engineering platform as an integrated foundation.
 
@@ -218,71 +218,71 @@ The goal is to demonstrate that the repositories, local platform, Core, contract
 
 ## Later Wave Scope
 
-### W01 — Identity & Organizations
+### W01 â€” Identity & Organizations
 
 Establish User/Organization separation, organization membership, roles/permissions, and foundational identity/authorization workflows.
 
-### W02 — Supplier & Verification
+### W02 â€” Supplier & Verification
 
 Establish supplier profile, onboarding, verification/KYB workflow, operational review, and verification lifecycle.
 
-### W03 — Catalog
+### W03 â€” Catalog
 
 Establish target Product/catalog/taxonomy/media capability.
 
-### W04 — Offers
+### W04 â€” Offers
 
 Establish supplier-specific Offer, MOQ, tier pricing, availability, lead-time, and commercial offer behavior.
 
-### W05 — Search & Discovery
+### W05 â€” Search & Discovery
 
 Establish buyer discovery over derived/rebuildable search indexes.
 
-### W06 — RFQ / Quotes / Messaging
+### W06 â€” RFQ / Quotes / Messaging
 
 Establish structured RFQ sourcing, versioned Quotes, negotiation, and messaging while preserving that chat is not official commercial truth.
 
-### W07 — Orders & Samples
+### W07 â€” Orders & Samples
 
 Establish accepted commercial Order snapshots, Order lifecycle, Order changes, and first-class Sample workflows.
 
-### W08 — Payments / Finance / Protection
+### W08 â€” Payments / Finance / Protection
 
 Establish payment/provider integration boundaries, Trade Protection lifecycle, Ledger, Refund, Commission, Settlement, and financial integrity.
 
-### W09 — Logistics
+### W09 â€” Logistics
 
 Establish Shipment and logistics workflows including supported shipping models and partial/multiple shipments.
 
-### W10 — Inspection
+### W10 â€” Inspection
 
 Establish independent Inspection workflow and applicable fulfillment gates.
 
-### W11 — Disputes / Completion
+### W11 â€” Disputes / Completion
 
 Establish dispute evidence/resolution, explicit financial propagation, order completion, and related lifecycle behavior.
 
-### W12 — Reviews / Reputation
+### W12 â€” Reviews / Reputation
 
 Establish transaction-eligible reviews, sample distinction, reputation, and trust presentation.
 
-### W13 — Monetization
+### W13 â€” Monetization
 
 Establish Professional Supplier Plan, entitlements, promotions, sponsored placement, and monetization operations without conflating payment with verification or reputation.
 
-### W14 — Platform Completion
+### W14 â€” Platform Completion
 
 Complete remaining V1 cross-cutting platform capabilities, operational gaps, and release-readiness requirements not owned by a narrower domain Wave.
 
-### W15 — Legacy Final Migration
+### W15 â€” Legacy Final Migration
 
 Execute final approved migration of remaining required legacy data/capabilities using Progressive Semantic Migration.
 
-### W16 — Cutover Readiness
+### W16 â€” Cutover Readiness
 
 Perform final cutover validation, migration verification, release gates, operational readiness, and go/no-go preparation.
 
-### W17 — Legacy Retirement
+### W17 â€” Legacy Retirement
 
 Retire the legacy Laravel runtime only after verified cutover while preserving required backups, retention, and historical/reference material.
 
@@ -290,16 +290,16 @@ Retire the legacy Laravel runtime only after verified cutover while preserving r
 
 The approved capability milestones are:
 
-- M0 — Engineering Platform Ready
-- M1 — Supplier Can Join Atlazora
-- M2 — Supplier Can Publish Wholesale Inventory
-- M3 — Buyer Can Discover & Source
-- M4 — Buyer Can Create Commercial Transaction
-- M5 — Money Can Move Safely
-- M6 — Order Can Be Fulfilled
-- M7 — Trade Lifecycle Complete
-- M8 — Business Model Operational
-- M9 — V1 Feature Complete
+- M0 â€” Engineering Platform Ready
+- M1 â€” Supplier Can Join Atlazora
+- M2 â€” Supplier Can Publish Wholesale Inventory
+- M3 â€” Buyer Can Discover & Source
+- M4 â€” Buyer Can Create Commercial Transaction
+- M5 â€” Money Can Move Safely
+- M6 â€” Order Can Be Fulfilled
+- M7 â€” Trade Lifecycle Complete
+- M8 â€” Business Model Operational
+- M9 â€” V1 Feature Complete
 
 Milestones describe demonstrated business/engineering capability.
 
@@ -307,43 +307,43 @@ They are not arbitrary calendar deadlines.
 
 ## Milestone Intent
 
-### M0 — Engineering Platform Ready
+### M0 â€” Engineering Platform Ready
 
 W00 foundations are sufficiently integrated and verified for feature implementation.
 
-### M1 — Supplier Can Join Atlazora
+### M1 â€” Supplier Can Join Atlazora
 
 Identity, organization, supplier onboarding, and verification capability are operational.
 
-### M2 — Supplier Can Publish Wholesale Inventory
+### M2 â€” Supplier Can Publish Wholesale Inventory
 
 Catalog and Offer capability allow verified/eligible suppliers to prepare and publish wholesale inventory according to policy.
 
-### M3 — Buyer Can Discover & Source
+### M3 â€” Buyer Can Discover & Source
 
 Buyers can discover supply and initiate sourcing through Search/RFQ capability.
 
-### M4 — Buyer Can Create Commercial Transaction
+### M4 â€” Buyer Can Create Commercial Transaction
 
 Accepted commercial terms can become an Order/Sample transaction with preserved commercial truth.
 
-### M5 — Money Can Move Safely
+### M5 â€” Money Can Move Safely
 
 Payment and Finance foundations support controlled, auditable financial execution.
 
-### M6 — Order Can Be Fulfilled
+### M6 â€” Order Can Be Fulfilled
 
 Orders can progress through applicable logistics and inspection workflows.
 
-### M7 — Trade Lifecycle Complete
+### M7 â€” Trade Lifecycle Complete
 
 Completion, disputes, refunds/financial propagation, and trust lifecycle are operational.
 
-### M8 — Business Model Operational
+### M8 â€” Business Model Operational
 
 Monetization and remaining platform operations required for the V1 business model are operational.
 
-### M9 — V1 Feature Complete
+### M9 â€” V1 Feature Complete
 
 Approved V1 functional scope is implemented sufficiently to enter final migration/cutover/launch readiness work.
 

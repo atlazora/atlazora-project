@@ -1,0 +1,20 @@
+{
+  "identities": [
+    {
+      "name": "atlazora-local",
+      "credentials": [
+        {
+          "accessKey": "atlazora-local",
+          "secretKey": "atlazora-local-only"
+        }
+      ],
+      "actions": [
+        "Admin",
+        "Read",
+        "Write",
+        "List",
+        "Tagging"
+      ]
+    }
+  ]
+}
