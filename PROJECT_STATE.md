@@ -1,14 +1,14 @@
 # Atlazora Project State
 
 - **Last Updated:** 2026-09-02
-- **Current Phase:** Phase 09 Ã¢â‚¬â€œ Implementation Roadmap / execution foundation
-- **Current Wave:** W00 Ã¢â‚¬â€œ Engineering Foundation
+- **Current Phase:** Phase 09 ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ Implementation Roadmap / execution foundation
+- **Current Wave:** W00 ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ Engineering Foundation
 - **Current Work Unit:** None
 - **Status:** IN_PROGRESS
 
 ## Completed
 
-W00-WU01 Ã¢â‚¬â€œ Project Governance & Repositories is COMPLETE.
+W00-WU01 ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ Project Governance & Repositories is COMPLETE.
 
 Completed foundation includes:
 
@@ -16,12 +16,12 @@ Completed foundation includes:
 - exactly eight official private repositories.
 - permanent `atlazora-project` project memory.
 - project governance structure and templates.
-- Phase Ã¢â€ â€™ Wave Ã¢â€ â€™ Work Unit Ã¢â€ â€™ Task hierarchy.
+- Phase ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ Wave ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ Work Unit ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ Task hierarchy.
 - Definition of Ready, Definition of Done, Handoff, ADR, WIP, commit and PR standards.
 - 13 approved planning Phases.
 - 18 execution Waves.
-- approved Phase 01Ã¢â‚¬â€œ13 planning preservation.
-- detailed Phase 01Ã¢â‚¬â€œ13 planning formalization.
+- approved Phase 01ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“13 planning preservation.
+- detailed Phase 01ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“13 planning formalization.
 - product policy consolidation.
 - ADR-0001 through ADR-0025, all Accepted.
 - required GitHub labels and milestones.
@@ -41,7 +41,7 @@ No primary Work Unit is currently active. W00-WU03 is COMPLETE.
 
 ## Blockers
 
-No current blocker is recorded. W00-WU04 Definition of Ready has passed and the Work Unit is READY.
+No current blocker is recorded. W00-WU04 — Contracts Foundation is IN_PROGRESS.
 
 GitHub private-repository branch protection/ruleset limitations under the current plan remain documented and non-blocking.
 
@@ -64,7 +64,7 @@ See `decisions/README.md`.
 
 ## Last Completed Work
 
-W00-WU03 â€” Go Core Foundation.
+W00-WU03 Ã¢â‚¬â€ Go Core Foundation.
 
 Review evidence:
 
@@ -78,7 +78,7 @@ Formal Handoff:
 
 ## Next Action
 
-Establish and verify the Definition of Ready for W00-WU04 â€” Contracts Foundation. Do not mark W00-WU04 IN_PROGRESS until that DoR passes.
+Establish and verify the Definition of Ready for W00-WU04 Ã¢â‚¬â€ Contracts Foundation. Do not mark W00-WU04 IN_PROGRESS until that DoR passes.
 
 W00-WU03 is COMPLETE with Final Handoff recorded. No primary Work Unit is currently IN_PROGRESS.
 
@@ -101,6 +101,6 @@ W00-WU03 is COMPLETE with Final Handoff recorded. No primary Work Unit is curren
 
 W00-WU01 is COMPLETE.
 
-No primary work unit is currently IN_PROGRESS. W00-WU04 is READY.
+W00-WU04 — Contracts Foundation is the only primary Work Unit currently IN_PROGRESS.
 
 Only one primary Work Unit may be IN_PROGRESS.
