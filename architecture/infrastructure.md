@@ -342,3 +342,27 @@ The infrastructure architecture does not yet finalize:
 - exact project topology details.
 
 These remain explicit later decisions.
+
+## Phase 11 Staging and Private Pilot Model
+
+The approved environment progression is:
+
+**Local → Development → Staging → Production (Private Pilot) → Production (Public)**
+
+Staging remains Production-like but appropriately smaller and is used for deployed-system validation, provider sandbox integration, migration rehearsal, E2E/security/performance/resilience verification, and operational rehearsal.
+
+Production (Private Pilot) is controlled Production exposure rather than a demonstration environment.
+
+Pilot exposure may be restricted through invitations, allowlists, feature flags, provider enablement, and operational gates while preserving the same Production architecture and deployable artifacts intended for broader rollout.
+
+External-provider integrations should progress through appropriate local/mock, sandbox/test, and controlled-live stages.
+
+Release Candidates must follow the build-once/promote-immutable-artifact rule.
+
+Before public launch, applicable migration/cutover procedures must be rehearsed for repeatability, validation, reconciliation, recovery, and source-of-truth transition.
+
+Pilot operation requires sufficient observability, support/incident readiness, backup/restore readiness, rollback/recovery mechanisms, security controls, and cost visibility.
+
+Public launch is an evidence-based release decision rather than an automatic consequence of elapsed pilot time.
+
+Exact pilot market, cohort, duration, providers, numeric success targets, capacity, SLO/RPO/RTO values, and public-launch date remain open until formally approved.
