@@ -1,4 +1,4 @@
-﻿# Atlazora Definition of Done
+# Atlazora Definition of Done
 
 A Work Unit may be marked `COMPLETE` only when every applicable item below is satisfied.
 
@@ -76,3 +76,11 @@ If an item is not applicable, mark it `N/A` and record why.
 If any applicable item above is incomplete, the Work Unit status is **NOT COMPLETE**.
 
 A Work Unit must never be declared complete merely because implementation code exists.
+
+## Performance / Resilience
+
+Where applicable to the Work Unit risk and capability:
+
+- [ ] Required performance verification has passed or an explicit reason for N/A is recorded.
+- [ ] Required resilience/failure-path verification has passed or an explicit reason for N/A is recorded.
+- [ ] Backup/restore or disaster-recovery impact has been verified where the Work Unit affects recoverability.

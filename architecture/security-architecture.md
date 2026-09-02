@@ -168,3 +168,38 @@ The security architecture does not yet finalize:
 - exact numeric security/SLO targets.
 
 These remain explicit later implementation and Phase 10 decisions.
+
+## Phase 10 Testing & Security Model
+
+The detailed approved testing/security model is preserved in `phases/phase-10/README.md`.
+
+Architecturally important security requirements include:
+
+- explicit User/Organization authorization and organization-isolation testing.
+- server-side authorization independent of UI visibility.
+- privileged Admin/Ops authorization and auditability.
+- failure-oriented payment/financial security testing.
+- concurrency and idempotency verification.
+- event/outbox retry, duplicate-delivery, and consumer-idempotency verification.
+- public/private/sensitive file-access enforcement.
+- threat modeling for meaningful trust-boundary changes.
+- abuse-case testing where risk warrants it.
+- risk-based performance and resilience testing.
+- backup/restore and disaster-recovery verification before Production readiness.
+- staged CI/security verification from Pull Request through Release Candidate.
+
+Candidate/baseline tools recorded by Phase 10 include Gitleaks, Semgrep, Trivy, Checkov, Playwright, OWASP ZAP, and Python type-analysis candidates such as mypy or Pyright.
+
+These tools are not all immutable architectural commitments.
+
+Exact overlapping tool choices remain implementation decisions provided the required security/testing coverage is preserved.
+
+## Security Release Gates
+
+An unresolved exploitable Critical security issue blocks Production release.
+
+A Work Unit may not be marked complete with an unresolved blocking Critical or High security issue.
+
+Other findings require explicit risk disposition according to severity, exploitability, affected scope, compensating controls, and release context.
+
+Security findings must not be silently waived merely to satisfy a schedule.
