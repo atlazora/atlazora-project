@@ -4,7 +4,7 @@
 - **Current Phase:** Phase 09 â€“ Implementation Roadmap / execution foundation
 - **Current Wave:** W00 â€“ Engineering Foundation
 - **Current Work Unit:** W00-WU03 — Go Core Foundation
-- **Status:** READY
+- **Status:** IN_PROGRESS
 
 ## Completed
 
@@ -32,7 +32,7 @@ Completed foundation includes:
 
 ## Current Objective
 
-Implement W00-WU02 â€“ Local Development Platform from its passed Definition of Ready.
+Implement W00-WU03 — Go Core Foundation from its passed Definition of Ready.
 
 ## Active Repositories
 
@@ -41,7 +41,7 @@ Implement W00-WU02 â€“ Local Development Platform from its passed Definitio
 
 ## Blockers
 
-No current blocker is recorded for W00-WU03 readiness.
+No current blocker is recorded for W00-WU03 execution.
 
 GitHub private-repository branch protection/ruleset limitations under the current plan remain documented and non-blocking.
 
@@ -64,7 +64,7 @@ See `decisions/README.md`.
 
 ## Last Completed Work
 
-W00-WU01 â€“ Project Governance & Repositories.
+W00-WU02 — Local Development Platform.
 
 Review evidence:
 
@@ -78,17 +78,17 @@ Formal Handoff:
 
 ## Next Action
 
-Review W00-WU03 Definition of Ready and begin implementation only after its execution prerequisites are confirmed.
+Execute W00-WU03 — Go Core Foundation according to its passed Definition of Ready and approved architecture constraints.
 
-W00-WU02 is COMPLETE with successful GitHub Governance Validation evidence and Final Handoff recorded. W00-WU03 is READY.
+W00-WU02 is COMPLETE with Final Handoff recorded. W00-WU03 Definition of Ready has passed and implementation is IN_PROGRESS.
 
 ## Required Reading
 
 1. `README.md`
 2. `PROJECT_STATE.md`
-3. `handoffs/W00-WU01-final-handoff.md`
+3. `handoffs/W00-WU02-final-handoff.md`
 4. `waves/wave-00/README.md`
-5. W00-WU02 Work Unit documentation
+5. `waves/wave-00/W00-WU03-go-core-foundation.md`
 6. `phases/phase-09/README.md`
 7. `product/policies.md`
 8. relevant architecture documents
@@ -101,6 +101,6 @@ W00-WU02 is COMPLETE with successful GitHub Governance Validation evidence and F
 
 W00-WU01 is COMPLETE.
 
-No primary Work Unit is currently IN_PROGRESS. W00-WU03 is READY and has not started implementation.
+W00-WU03 is the only primary Work Unit currently IN_PROGRESS.
 
 Only one primary Work Unit may be IN_PROGRESS.
