@@ -1,4 +1,4 @@
-﻿# Atlazora Project State
+# Atlazora Project State
 
 - **Last Updated:** 2026-09-02
 - **Current Phase:** Phase 09 — Implementation Roadmap / execution foundation
@@ -17,7 +17,7 @@
 - Exactly eight official repositories created.
 - All eight repositories confirmed private and non-archived.
 - `atlazora-project` cloned through the dedicated SSH host alias.
-- Local branch baseline set to `main`.
+- Default branch verified as `main`.
 - Initial governance directory structure created.
 - 13 Phase directories created and verified.
 - 18 Wave directories created and verified.
@@ -32,11 +32,22 @@
 - ADR sequence verified from ADR-0001 through ADR-0022.
 - All 22 initial ADRs verified with status `Accepted`.
 - Repository-wide empty-file check passed.
-- W00 and W00-WU01 status consistency verified as `IN_PROGRESS`.
+- Required 14 GitHub labels configured and verified.
+- W00 through W17 GitHub milestones configured and verified.
+- GitHub Issue Forms configured and verified.
+- Pull Request governance template configured and verified.
+- GitHub Project `Atlazora Execution` created.
+- Project workflow configured as `Backlog → Ready → In Progress → Review/Test → Done`.
+- Initial governance baseline committed and pushed.
+- Governance validation GitHub Actions workflow created.
+- Governance CI completed successfully.
+- GitHub Actions runtime warning resolved.
+- GitHub Rulesets capability checked and confirmed unavailable for private repositories on the current GitHub Free organization plan.
+- Traditional Branch Protection capability checked and confirmed unavailable for private repositories on the current GitHub Free organization plan.
 
 ## Current Objective
 
-Complete W00-WU01 by preserving the remaining approved Phase 01–13 planning detail in Git, establishing GitHub execution governance, committing and pushing the governance baseline, validating applicable CI/governance checks, completing the final Definition of Done audit, and writing the formal Handoff for W00-WU02.
+Resolve the remaining approved Phase 01–13 planning-detail preservation gap, then complete the final W00-WU01 Definition of Done audit, update final project state, and write the formal Handoff to W00-WU02.
 
 ## Active Repositories
 
@@ -54,6 +65,16 @@ Detailed approved planning content from Phases 01–13 has not yet been sufficie
 Current Phase README files are structural planning records, while several product documents explicitly indicate that additional approved planning detail still requires formal import.
 
 W00-WU01 must not be marked `COMPLETE` until this gap is resolved.
+
+### Platform Limitation
+
+The `atlazora` organization is currently on GitHub Free and all official repositories are private.
+
+GitHub server-side repository Rulesets and traditional Branch Protection are not available for these private repositories on the current plan.
+
+Atlazora will not make repositories public solely to gain these controls.
+
+Until the plan or capability changes, governance enforcement relies on GitHub Actions validation, the documented PR checkpoint, Definition of Done, and project execution discipline.
 
 ### Tooling Limitation
 
@@ -76,18 +97,18 @@ Future fundamental architectural decisions that are not already approved must be
 
 | Environment | State |
 |---|---|
-| Local | Governance bootstrap active |
+| Local | Governance foundation active |
 | Dev | NOT PROVISIONED |
 | Staging | NOT PROVISIONED |
 | Production | NOT PROVISIONED |
 
 ## Last Completed Work
 
-Completed and verified the initial ADR formalization baseline: 22 sequential ADRs exist from ADR-0001 through ADR-0022, all are non-empty, all are `Accepted`, and the W00-WU01 governance templates and status model passed the initial consistency audit.
+GitHub execution governance was established and verified: labels, W00–W17 milestones, Issue Forms, Pull Request template, Project Board workflow, Git baseline, and Governance Validation CI are operational. GitHub server-side Rulesets and Branch Protection were also evaluated and confirmed unavailable for private repositories on the current GitHub Free organization plan.
 
 ## Next Action
 
-Commit and push the current truthful `IN_PROGRESS` governance baseline, then configure GitHub execution governance while preserving the Phase 01–13 planning-detail gap as an explicit open completion criterion.
+Preserve the remaining approved detailed planning content from Phases 01–13 in Git without inventing or replacing previously approved decisions.
 
 ## Required Reading
 
