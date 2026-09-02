@@ -267,3 +267,25 @@ The detailed approved Phase 01 source is preserved at:
 `../phases/source/ATLAZORA_APPROVED_PLANNING_SOURCE.md`
 
 Phase 01 formalization was completed during W00-WU01.
+
+## Measure → Learn → Develop Operating Principle
+
+After Production launch, Atlazora follows the permanent evidence loop:
+
+**Measure → Learn → Decide → Develop → Release → Measure**
+
+The marketplace should optimize for real commercial value and liquidity rather than vanity metrics or random feature accumulation.
+
+Measurement should cover applicable supplier and buyer funnels, search/discovery, RFQ/Quote behavior, Samples, Orders, payments, fulfillment, trust/disputes, revenue/unit economics, retention, operations, technical health, security, and cost.
+
+A Metric defines what is measured; a Target defines the desired value. Numeric targets must not be invented before real baseline and business evidence exist.
+
+Analytics events support learning but do not replace authoritative domain events or transactional state.
+
+V1.1 priorities and later roadmap changes are evidence-driven rather than fixed before Production learning exists.
+
+AI/intelligence capabilities require measurable benefit, appropriate fallback, evaluation, risk/security/privacy controls, and human/domain authority where decisions are sensitive.
+
+Technical-debt prioritization, scaling changes, and service extraction are driven by demonstrated evidence rather than architecture fashion.
+
+Git-based governance, Work Units, ADRs, testing/security, Definition of Done, and Handoffs continue after launch.
