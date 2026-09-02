@@ -203,3 +203,23 @@ A Work Unit may not be marked complete with an unresolved blocking Critical or H
 Other findings require explicit risk disposition according to severity, exploitability, affected scope, compensating controls, and release context.
 
 Security findings must not be silently waived merely to satisfy a schedule.
+
+## Phase 12 Production Security Operations
+
+Private or public Production exposure requires Production-grade security controls.
+
+Privileged Production operations require explicit authorization, least privilege, strong authentication appropriate to risk, and auditability.
+
+Admin/Ops workflows must use approved application/API boundaries; routine direct Production database modification is not an approved operational workflow.
+
+Production secrets, provider credentials, data, and privileged identities must remain separated from non-production environments.
+
+Production security operations require an incident path capable of containment, credential/access revocation or rotation, evidence preservation, impact assessment, recovery, and follow-up.
+
+Suspicious account, payment, or commercial activity requires an operational fraud/abuse review path.
+
+Automated intelligence may assist detection or scoring but must not silently become authoritative for sensitive decisions without approved controls.
+
+Security-sensitive Production interventions must remain traceable.
+
+Exact SIEM tooling, privileged-access workflow, retention periods, fraud rules, and legal notification requirements remain open until formally determined by implementation and applicable policy/law.

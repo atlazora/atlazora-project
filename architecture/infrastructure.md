@@ -366,3 +366,36 @@ Pilot operation requires sufficient observability, support/incident readiness, b
 Public launch is an evidence-based release decision rather than an automatic consequence of elapsed pilot time.
 
 Exact pilot market, cohort, duration, providers, numeric success targets, capacity, SLO/RPO/RTO values, and public-launch date remain open until formally approved.
+
+## Phase 12 Production Launch and Operations Model
+
+The approved Production operating progression is:
+
+**Production Ready → Controlled Go-Live → Early-Life Support → Stable Operations**
+
+Production launch is a controlled operational transition rather than a single deployment action.
+
+Applicable launch foundations include:
+
+- isolated Production identities, secrets, data, and privileged access.
+- immutable artifacts promoted through the approved pipeline.
+- Terraform/IaC as persistent infrastructure source of truth.
+- final Progressive Semantic Migration/cutover controls.
+- explicit live-payment gate.
+- progressive rollout.
+- first-transaction observation.
+- kill switches and dependency-protection mechanisms where appropriate.
+- graceful degradation without corruption of authoritative state.
+- explicit application/configuration/infrastructure/data/cutover recovery distinctions.
+- tested backup/restore and disaster-recovery procedures.
+- launch and ongoing observability.
+- incident/runbook readiness.
+- evidence-driven scaling and cost visibility.
+
+Routine Production hot editing from developer machines is not an approved operating model.
+
+Database sharding is not a V1 Day-One requirement.
+
+Service extraction from the modular Go Core occurs only when evidence justifies the added operational boundary and must preserve explicit contracts and data ownership.
+
+Exact Production capacity, autoscaling thresholds, SLO/RPO/RTO values, backup retention, observability tooling, alert thresholds, public-launch date, and extraction thresholds remain open until supported by implementation/operating evidence.
