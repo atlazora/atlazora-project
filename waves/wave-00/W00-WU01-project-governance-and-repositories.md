@@ -1,7 +1,7 @@
-# W00-WU01 â€” Project Governance & Repositories
+# W00-WU01 — Project Governance & Repositories
 
-- **Phase:** Phase 09 â€” Implementation Roadmap / execution foundation
-- **Wave:** W00 â€” Engineering Foundation
+- **Phase:** Phase 09 — Implementation Roadmap / execution foundation
+- **Wave:** W00 — Engineering Foundation
 - **Work Unit:** W00-WU01
 - **Status:** IN_PROGRESS
 - **Primary Repository:** `atlazora-project`
@@ -62,34 +62,34 @@ This Work Unit establishes:
 - Dedicated Atlazora Git/SSH identity established.
 - GitHub CLI authenticated with required organization/repository access.
 - Eight official repositories created.
-- Approved planning decisions from Phases 01â€“13 available as baseline inputs.
+- Approved planning decisions from Phases 01–13 available as baseline inputs.
 
 ## Relevant ADRs
 
 Initial W00-WU01 ADR baseline:
 
-- ADR-0001 â€” Product and Offer Are Separate Domain Concepts
-- ADR-0002 â€” User and Organization Are Separate Domain Concepts
-- ADR-0003 â€” Go Transactional Core
-- ADR-0004 â€” Python Intelligence Boundary
-- ADR-0005 â€” Vue 3 and TypeScript for Web and Admin
-- ADR-0006 â€” Modular Architecture First, Progressive Microservices
-- ADR-0007 â€” PostgreSQL as Transactional Source of Truth
-- ADR-0008 â€” Transactional Outbox From Day One
-- ADR-0009 â€” Idempotency From Day One
-- ADR-0010 â€” REST and OpenAPI Versioned Contracts
-- ADR-0011 â€” Multi-Repository Strategy
-- ADR-0012 â€” GCP / Dammam / GKE Autopilot
-- ADR-0013 â€” Terraform / Infrastructure as Code
-- ADR-0014 â€” Managed Production Data Services
-- ADR-0015 â€” S3-Compatible Object Storage Abstraction
-- ADR-0016 â€” Redis Is Ephemeral Only
-- ADR-0017 â€” Search Is Derived and Rebuildable
-- ADR-0018 â€” Build Once, Promote Immutable Artifacts
-- ADR-0019 â€” Progressive Semantic Migration
-- ADR-0020 â€” One Source of Truth Per Data Type During Migration
-- ADR-0021 â€” Testing and Security Integrated Into Every Work Unit
-- ADR-0022 â€” Git as Permanent Project Memory
+- ADR-0001 — Product and Offer Are Separate Domain Concepts
+- ADR-0002 — User and Organization Are Separate Domain Concepts
+- ADR-0003 — Go Transactional Core
+- ADR-0004 — Python Intelligence Boundary
+- ADR-0005 — Vue 3 and TypeScript for Web and Admin
+- ADR-0006 — Modular Architecture First, Progressive Microservices
+- ADR-0007 — PostgreSQL as Transactional Source of Truth
+- ADR-0008 — Transactional Outbox From Day One
+- ADR-0009 — Idempotency From Day One
+- ADR-0010 — REST and OpenAPI Versioned Contracts
+- ADR-0011 — Multi-Repository Strategy
+- ADR-0012 — GCP / Dammam / GKE Autopilot
+- ADR-0013 — Terraform / Infrastructure as Code
+- ADR-0014 — Managed Production Data Services
+- ADR-0015 — S3-Compatible Object Storage Abstraction
+- ADR-0016 — Redis Is Ephemeral Only
+- ADR-0017 — Search Is Derived and Rebuildable
+- ADR-0018 — Build Once, Promote Immutable Artifacts
+- ADR-0019 — Progressive Semantic Migration
+- ADR-0020 — One Source of Truth Per Data Type During Migration
+- ADR-0021 — Testing and Security Integrated Into Every Work Unit
+- ADR-0022 — Git as Permanent Project Memory
 
 ## Contracts
 
@@ -128,9 +128,9 @@ W00-WU01 security scope includes:
 - [x] ADR lifecycle is formalized.
 - [x] 22 approved architectural decisions are formalized as Accepted ADRs.
 - [x] Product and architecture baseline documentation exists.
-- [ ] Detailed approved planning content from Phases 01â€“13 is sufficiently preserved in Git.
+- [ ] Detailed approved planning content from Phases 01–13 is sufficiently preserved in Git.
 - [x] GitHub labels are configured.
-- [x] GitHub W00â€“W17 milestones are configured.
+- [x] GitHub W00–W17 milestones are configured.
 - [x] GitHub Project Board workflow is configured.
 - [x] GitHub issue/PR governance templates are configured as required.
 - [x] Initial Git baseline is committed and pushed.
@@ -170,7 +170,7 @@ W00-WU01 security scope includes:
 - W00 through W17 GitHub milestones configured and verified.
 - GitHub Issue Forms and Pull Request template configured on `main`.
 - GitHub Project `Atlazora Execution` created under the `atlazora` organization.
-- Project workflow verified as `Backlog â†’ Ready â†’ In Progress â†’ Review/Test â†’ Done`.
+- Project workflow verified as `Backlog → Ready → In Progress → Review/Test → Done`.
 - Initial governance baseline committed and pushed.
 - Governance validation GitHub Actions workflow created and verified.
 - Latest Governance Validation workflow run completed successfully.
@@ -185,7 +185,7 @@ W00-WU01 is not complete.
 
 Remaining work includes:
 
-- preservation of sufficient detailed approved Phase 01â€“13 planning decisions
+- preservation of sufficient detailed approved Phase 01–13 planning decisions
 - final `PROJECT_STATE.md` update after the planning-detail gap is resolved
 - final Definition of Done audit
 - Final Handoff to W00-WU02

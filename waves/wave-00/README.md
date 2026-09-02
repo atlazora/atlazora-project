@@ -1,4 +1,4 @@
-﻿# W00 — Engineering Foundation
+# W00 — Engineering Foundation
 
 ## Status
 
@@ -6,19 +6,145 @@ IN_PROGRESS
 
 ## Purpose
 
-This Wave groups implementation Work Units for **Engineering Foundation**.
+W00 establishes the engineering platform required to implement Atlazora feature Waves safely and consistently.
+
+The goal is not merely to create repository skeletons.
+
+W00 establishes the foundations for:
+
+- local development.
+- transactional Core development.
+- versioned contracts.
+- reliable events/outbox.
+- Intelligence workloads.
+- Web.
+- Admin/Operations.
+- infrastructure.
+- CI/CD and supply chain.
+- observability.
+- security.
+- integrated foundation verification.
 
 ## Execution Rules
 
 - Work follows Phase → Wave → Work Unit → Task.
-- Only one primary Work Unit should be IN_PROGRESS for solo development.
+- Implementation should deliver coherent vertical slices where applicable.
+- Only one primary Work Unit may be `IN_PROGRESS` for solo development.
+- A side task may proceed only when the primary Work Unit is genuinely blocked.
 - Each Work Unit must satisfy Definition of Ready before execution.
 - Each Work Unit must satisfy Definition of Done and produce a formal Handoff before completion.
-- Relevant accepted ADRs are mandatory inputs.
+- Relevant Accepted ADRs are mandatory inputs.
+- Testing, security, observability, and documentation are part of capability delivery where applicable.
+- Foundations required for V1 correctness, security, operability, scalability, or safe evolution must not be deferred merely to reduce early scope.
+
+## Work Units
+
+| Work Unit | Name | Status |
+|---|---|---|
+| W00-WU01 | Project Governance & Repositories | IN_PROGRESS |
+| W00-WU02 | Local Development Platform | PLANNED |
+| W00-WU03 | Go Core Foundation | PLANNED |
+| W00-WU04 | Contracts Foundation | PLANNED |
+| W00-WU05 | Event & Outbox Foundation | PLANNED |
+| W00-WU06 | Python Intelligence Foundation | PLANNED |
+| W00-WU07 | Web Foundation | PLANNED |
+| W00-WU08 | Admin Foundation | PLANNED |
+| W00-WU09 | Infrastructure Foundation | PLANNED |
+| W00-WU10 | CI/CD & Supply Chain | PLANNED |
+| W00-WU11 | Observability Foundation | PLANNED |
+| W00-WU12 | Security Baseline | PLANNED |
+| W00-WU13 | Foundation Integration Test | PLANNED |
+
+## W00-WU01 — Project Governance & Repositories
+
+Establish permanent Git project memory, repository governance, ADRs, execution standards, GitHub governance, and approved planning preservation.
+
+Current status: `IN_PROGRESS`.
+
+## W00-WU02 — Local Development Platform
+
+Establish the reproducible local development platform and required local service dependencies.
+
+Status: `PLANNED`.
+
+## W00-WU03 — Go Core Foundation
+
+Establish the modular Go transactional Core foundation.
+
+Status: `PLANNED`.
+
+## W00-WU04 — Contracts Foundation
+
+Establish versioned OpenAPI, event, and shared-contract foundations.
+
+Status: `PLANNED`.
+
+## W00-WU05 — Event & Outbox Foundation
+
+Establish Transactional Outbox, idempotent consumption, and foundational asynchronous integration behavior.
+
+The exact broker remains open until formally resolved.
+
+Status: `PLANNED`.
+
+## W00-WU06 — Python Intelligence Foundation
+
+Establish Python intelligence/data workload foundations while preserving the transactional ownership boundary.
+
+Status: `PLANNED`.
+
+## W00-WU07 — Web Foundation
+
+Establish the Vue 3 + TypeScript Marketplace/Buyer/Supplier Web foundation.
+
+Status: `PLANNED`.
+
+## W00-WU08 — Admin Foundation
+
+Establish the Vue 3 + TypeScript Admin/Operations foundation using approved APIs/domain behavior.
+
+Status: `PLANNED`.
+
+## W00-WU09 — Infrastructure Foundation
+
+Establish Terraform/GCP infrastructure foundations according to the approved infrastructure architecture.
+
+Status: `PLANNED`.
+
+## W00-WU10 — CI/CD & Supply Chain
+
+Establish CI/CD, immutable artifact flow, and applicable supply-chain controls.
+
+Status: `PLANNED`.
+
+## W00-WU11 — Observability Foundation
+
+Establish foundational logging, metrics, correlation/tracing where applicable, health visibility, and operational diagnostics.
+
+Status: `PLANNED`.
+
+## W00-WU12 — Security Baseline
+
+Establish the engineering security baseline required by subsequent feature Waves.
+
+Status: `PLANNED`.
+
+## W00-WU13 — Foundation Integration Test
+
+Verify the complete W00 foundation as an integrated engineering platform.
+
+Status: `PLANNED`.
 
 ## Current Work
 
-- `W00-WU01 — Project Governance & Repositories` — `IN_PROGRESS`
+`W00-WU01 — Project Governance & Repositories` is the only primary Work Unit currently `IN_PROGRESS`.
 
-Do not begin `W00-WU02` until W00-WU01 passes its complete Definition of Done and a Final Handoff has been written.
+Do not begin W00-WU02 until W00-WU01 passes its complete Definition of Done and a Final Handoff has been written.
 
+## Completion Target
+
+W00 reaches its engineering-platform milestone when the approved W00 Work Units have passed their respective completion gates and the Foundation Integration Test demonstrates sufficient readiness for feature Waves.
+
+This corresponds to:
+
+**M0 — Engineering Platform Ready**
