@@ -1,175 +1,364 @@
 # Atlazora Data Architecture
 
-## Transactional Source of Truth
+## Purpose
 
-PostgreSQL is the approved source of transactional truth for the Atlazora transactional platform.
+The data architecture preserves authoritative ownership, transactional correctness, historical integrity, and safe evolution across domains and during migration.
 
-Authoritative business state must not be silently duplicated across systems.
+## Transactional Truth
 
-## Domain-Owned Data
+PostgreSQL is the source of authoritative transactional truth for the target Atlazora platform.
 
-Transactional truth is owned by explicit business domains.
+A shared PostgreSQL cluster is acceptable initially.
 
-Conceptually:
+Shared physical infrastructure does not remove logical domain ownership.
 
-- Identity owns users, organizations, and memberships.
-- Supplier owns supplier participation and verification.
-- Catalog owns Products and catalog definition.
-- Sourcing owns RFQs, Quotes, and QuoteVersions.
-- Commerce owns Offers, Orders, and accepted commercial snapshots.
-- Finance owns Payments, Refunds, Ledger, Commission, and Settlement.
-- Logistics owns Shipments and delivery lifecycle.
-- Inspection owns inspection workflow and evidence.
-- Disputes owns dispute workflow and decisions.
-- Trust owns Reviews and reputation records.
-- Growth owns subscriptions, entitlements, and promotions.
-- Platform owns applicable platform-level operational/configuration records.
+Each authoritative data type has one owning domain.
 
-## Shared PostgreSQL Cluster
+## Domain Ownership
 
-A shared PostgreSQL cluster is acceptable for the initial modular architecture.
+Domains own their authoritative state.
 
-This does not remove domain ownership boundaries.
+Another domain must not write directly to another domain's authoritative data merely because tables share a database cluster.
 
-Rules:
+Cross-domain behavior uses controlled application boundaries, APIs, events, or other approved contracts.
 
-- every authoritative data type has one owner.
-- direct cross-domain writes are not allowed merely because schemas share a cluster.
-- modules must interact through controlled application boundaries.
-- physical co-location must not become semantic ownership coupling.
-- future service extraction must preserve one authoritative owner.
+## Core Ownership Examples
+
+Approved ownership includes:
+
+- Identity owns User, Organization, Membership, Role/Permission relationships.
+- Supplier owns supplier profile and verification workflow state.
+- Catalog owns Product, Offer, categories/taxonomy, and catalog media metadata.
+- Sourcing owns RFQ, Quote, QuoteVersion, and commercial sourcing workflow.
+- Commerce owns Order, OrderItem, accepted commercial snapshot, samples, and OrderChangeRequest.
+- Finance owns Payment, Refund, Ledger, Commission, Settlement, and financial execution state.
+- Logistics owns Shipment and logistics workflow state.
+- Inspection owns inspection requirements, evidence, and outcomes.
+- Disputes owns dispute workflow and resolution decisions.
+- Trust owns review/reputation records.
+- Growth owns subscriptions, entitlements, promotions, and sponsored placement state.
+- Platform owns cross-cutting platform records according to explicit capability ownership.
+
+Detailed approved domain boundaries are preserved in `../domains/README.md`.
 
 ## One Source of Truth
 
-During both normal operation and migration, every data type must have one clearly identified authoritative source.
+Every authoritative data type has one source of truth.
 
-Temporary replication and derived projections are permitted.
+This rule applies both to normal target operation and during Progressive Semantic Migration.
 
-Ambiguous write ownership and uncontrolled dual writes are not.
+Temporary coexistence between legacy and target systems is permitted only when ownership is explicit.
+
+Ambiguous write ownership and uncontrolled dual writes are not approved.
+
+## Migration Ownership Transition
+
+For each migrated data area, the migration plan must identify:
+
+- legacy source of truth.
+- target source of truth.
+- compatibility/coexistence period.
+- write transition.
+- read transition where applicable.
+- validation.
+- rollback/recovery strategy.
+- completion/cutover criteria.
+
+A source-of-truth transition must be explicit rather than emerging accidentally from implementation.
+
+## Legacy Traceability
+
+Migrated target records may preserve explicit migration metadata such as:
+
+- `legacy_source`
+- `legacy_id`
+
+where required for traceability, idempotent import, reconciliation, audit, or debugging.
+
+Legacy identifiers do not replace the target system's own identity/public-ID strategy.
+
+The exact target/public ID convention remains open.
+
+## Migration Jobs
+
+Migration/ETL jobs must be designed to be repeatable and idempotent.
+
+Re-running an import must not silently duplicate target business records.
+
+Migration jobs should support appropriate:
+
+- extraction.
+- transformation.
+- loading.
+- validation.
+- error reporting.
+- retry/recovery.
+- reconciliation.
+- execution visibility.
+
+Exact tooling remains an implementation decision.
+
+## Missing Legacy Facts
+
+Missing legacy facts must not be invented during migration.
+
+When reliable historical evidence is absent, migration must use an approved deterministic derivation rule, preserve an unknown/null state where valid, flag for review where required, or document the limitation.
+
+Historical commercial, financial, verification, dispute, or operational facts must not be fabricated merely to satisfy a target schema.
 
 ## Historical Integrity
 
-Historical commercial and financial truth must remain stable.
+Accepted commercial and financial history must remain explainable after migration.
 
-Examples:
+Examples include:
 
-- QuoteVersion is immutable.
-- accepted Order commercial terms are immutable.
-- later Product or Offer changes do not rewrite historical Orders.
-- financial corrections use auditable adjustments.
-- verification or subscription expiry does not erase historical transaction data.
-- review moderation remains auditable.
+- accepted QuoteVersion.
+- accepted Order commercial snapshot.
+- Payment/provider state.
+- Refunds.
+- Ledger adjustments.
+- Commission snapshots.
+- Settlement state.
+- Shipment history.
+- Inspection outcomes.
+- dispute decisions.
+- eligible Reviews.
 
-## Transaction Separation
+Migration must preserve reliable historical meaning rather than mechanically preserve legacy table shape.
 
-Important transactional concepts are separate:
+## QuoteVersion
 
-- Order is not Payment.
-- Order is not Shipment.
-- Shipment is not Inspection.
-- Dispute decision is not Financial execution.
-- current Product/Offer data is not historical Order truth.
+A QuoteVersion is immutable once issued.
 
-These records may participate in one business flow while retaining independent authoritative lifecycle state.
+A later negotiation produces another version rather than mutating the historical quote.
 
-## Money and Currency
+## Order Snapshot
 
-V1 requires explicit Money/Currency semantics.
+An accepted Order stores the commercial truth required to understand what was agreed.
 
-Authoritative monetary values must not use floating-point representation.
+Later Product, Offer, pricing, supplier, or catalog changes must not rewrite that accepted historical agreement.
 
-The exact physical representation of money remains unresolved until the appropriate Engineering Foundation/contracts decision.
+## Order Ownership
 
-Currency, payment, settlement, and applicable FX concepts must be represented explicitly rather than hidden in SAR-only assumptions.
+Each V1 Order has:
 
-## Derived Data
+- one Buyer Organization.
+- one Supplier Organization.
 
-Search indexes, caches, analytical projections, and intelligence outputs are derived data.
+One RFQ may result in multiple supplier Orders when multiple suppliers are awarded.
 
-They must be reproducible from authoritative sources where applicable.
+## Order Changes
 
-## Search
+Post-acceptance changes must be explicit.
 
-Search is explicitly derived and rebuildable.
+An OrderChangeRequest or equivalent approved workflow must preserve the original accepted agreement and the approved change history.
 
-Loss or corruption of a search index must not imply loss of authoritative marketplace or transaction data.
+## Samples
 
-## Redis
+Samples are first-class commercial records/workflows.
 
-Redis is approved for ephemeral workloads only.
+A Sample may use sample-specific terms and may bypass normal wholesale MOQ when those sample terms permit it.
 
-It must not be the sole durable source for transactional business truth.
+## Money
 
-Applicable uses may include:
+Money must be represented explicitly and must not use floating-point arithmetic for authoritative financial values.
 
-- caching.
-- short-lived coordination.
-- rate-control state.
-- disposable derived state.
+Phase 05/08 do not finalize the exact physical money representation.
 
-## Analytics and Intelligence
+Currency is explicit.
 
-Analytics and Python intelligence workloads may read, derive, score, enrich, or project data according to approved interfaces.
+Where FX is used, enough rate/context information must be recorded to explain the financial result.
 
-They do not become owners of transactional business state.
+Exact FX implementation remains open.
 
-Python intelligence must not directly mutate Core-owned transactional truth.
+## Payment
 
-## Object Storage
+`Order != Payment`.
 
-Object storage must use an S3-compatible abstraction.
+Payment is independently modeled and Finance-owned.
 
-Documents/files require explicit classification such as:
+Provider-controlled payment confirmation is authoritative where a provider controls the payment rail.
+
+Browser/client return flow alone must not establish successful payment truth.
+
+Retryable payment commands and callbacks must be idempotent.
+
+Duplicate provider delivery must not create duplicate financial effects.
+
+## Refunds
+
+Refunds are explicit Finance records/actions.
+
+Refund execution must respect applicable limits such as the amount actually eligible/refundable.
+
+Refund state must not be inferred only from Commerce or Dispute status.
+
+## Ledger
+
+Financial corrections are represented through auditable adjustments rather than destructive rewriting of historical financial records.
+
+The Ledger must support traceability from financial effects to their business cause.
+
+## Commission
+
+Commission terms applicable to a transaction must be snapshotted so later pricing/plan configuration changes do not rewrite historical transaction economics.
+
+## Settlement
+
+Settlement eligibility and settlement execution are Finance-owned concerns.
+
+Completion of an Order does not by itself imply that every settlement action has occurred.
+
+## Shipment
+
+`Order != Shipment`.
+
+An Order may have:
+
+- one Shipment.
+- multiple Shipments.
+- partial Shipments.
+
+Logistics owns Shipment lifecycle state.
+
+## Inspection
+
+Inspection is independently modeled.
+
+Where commercial terms require inspection before shipping or another milestone, Inspection outcome may gate the applicable workflow.
+
+Inspection does not become the owner of Shipment or Finance state.
+
+## Disputes
+
+Dispute workflow and resolution are independently modeled.
+
+A dispute decision requiring a financial outcome must explicitly propagate to Finance for actual execution.
+
+Changing dispute status alone must not silently create or imply a refund/payment effect.
+
+## Reviews
+
+Reviews require transaction-based eligibility.
+
+Sample-related review context must remain distinguishable where required.
+
+Moderation must not destroy the historical relationship between the Review and its eligible transaction.
+
+## Growth / Monetization
+
+`Subscription != Verification`.
+
+Subscription expiry must not delete supplier identity, verification history, or commercial history.
+
+Sponsored placement must not modify verification or reputation truth.
+
+## Documents and Files
+
+Files/documents require explicit classification such as:
 
 - public.
 - private.
 - sensitive.
 
-Access must be authorization-aware.
+Access is authorization-controlled according to classification and business ownership.
 
-Storage processing may require validation, security scanning, metadata, and audit according to document sensitivity.
+Migration of legacy media must preserve applicable access/security semantics rather than assuming legacy accessibility is the target policy.
 
-## Managed Production Data Services
+## Analytics and Intelligence
 
-Production data infrastructure should use managed services where this improves:
+Analytics and Intelligence data is derived unless explicitly designated otherwise by an approved ownership decision.
 
-- reliability.
-- backups.
-- high availability.
-- patching.
-- monitoring.
-- operational safety.
+Derived data must not silently become the authoritative source for transactional state.
 
-## Events and Transactional Consistency
+Python Intelligence must not directly mutate Core-owned transactional truth.
 
-Transactional state changes that require reliable event publication use the Transactional Outbox pattern.
+## Search
 
-Event delivery may be duplicated.
+Search indexes are derived and rebuildable.
 
-Consumers must be idempotent where duplicate delivery can occur.
+Search must not become the only source of Product, Offer, Supplier, Order, or other authoritative business state.
 
-Cross-domain distributed database transactions are not the normal integration model.
+## Redis
 
-## Migration
+Redis is ephemeral only.
+
+Redis must not contain the only durable copy of authoritative transactional state.
+
+## Object Storage
+
+Object storage uses an S3-compatible application abstraction.
+
+Object storage contains file/blob content according to approved classification and ownership rules; authoritative business metadata remains owned by the appropriate domain.
+
+## Events / Outbox
+
+Transactional Outbox is a Day One foundation.
+
+When transactional state requires reliable event publication, the durable publication intent is committed with the applicable transactional change.
+
+Consumers must be idempotent where duplicate delivery can create duplicate effects.
+
+Event-derived projections do not gain ownership of producer transactional truth.
+
+## Progressive Semantic Migration
 
 Atlazora uses Progressive Semantic Migration.
 
-Migration must explicitly define:
+Legacy data and behavior are mapped by business meaning into the target domain model.
 
-- current source of truth.
-- target source of truth.
-- ownership transition.
-- semantic mapping.
+Migration is not:
+
+- blind table-to-table copying.
+- line-by-line application translation.
+- uncontrolled dual writing.
+- permanent accidental hybrid architecture.
+
+Legacy behavior is migration/reference input, not the target specification.
+
+## Migration Validation
+
+Migration validation must be risk-appropriate and may include:
+
+- counts.
+- referential checks.
+- semantic/business-rule validation.
+- duplicate detection.
+- missing-data detection.
+- financial reconciliation.
+- target invariant checks.
+- representative/manual sampling.
+
+Successful script execution alone is not sufficient proof of successful migration.
+
+## Migration Cutover
+
+A migrated data area becomes target-owned only after its approved cutover criteria pass.
+
+Cutover must define:
+
+- previous source of truth.
+- new source of truth.
+- write transition.
+- read transition where applicable.
 - compatibility period.
 - validation.
 - rollback/recovery strategy.
 - completion criteria.
 
-Missing legacy facts must not be invented during migration.
+## Legacy Retirement
+
+The legacy Laravel runtime is retired only after verified migration/cutover.
+
+Required historical access and retention must be preserved.
+
+Retirement includes appropriate final data validation and final legacy database backup/export.
+
+The legacy repository remains archived/reference material rather than being deleted as if the historical implementation never existed.
 
 ## Open Physical Design
 
-Phase 05 does not finalize:
+Phase 05/08 do not finalize:
 
 - physical schema names.
 - table names.
@@ -181,15 +370,19 @@ Phase 05 does not finalize:
 - API representation.
 - retention periods.
 - exact FX implementation.
+- exact ETL framework.
+- exact migration batch sizes.
 
-These are resolved through later Engineering Foundation and domain Work Units without changing the approved domain invariants.
+These are resolved through later Engineering Foundation and domain Work Units without changing the approved domain/migration invariants.
 
 ## Related Documentation
 
 - `../domains/README.md`
 - `../phases/phase-05/README.md`
+- `../phases/phase-08/README.md`
 - `domain-boundaries.md`
 - `event-architecture.md`
+- `infrastructure.md`
 - `../decisions/ADR-0007-postgresql-transactional-truth.md`
 - `../decisions/ADR-0008-transactional-outbox-day-one.md`
 - `../decisions/ADR-0009-idempotency-day-one.md`
