@@ -1,55 +1,51 @@
 # Atlazora Project State
 
 - **Last Updated:** 2026-09-02
-- **Current Phase:** Phase 09 ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ Implementation Roadmap / execution foundation
-- **Current Wave:** W00 ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ Engineering Foundation
-- **Current Work Unit:** None
+- **Current Phase:** Phase 09 — Implementation Roadmap / execution foundation
+- **Current Wave:** W00 — Engineering Foundation
+- **Current Work Unit:** W00-WU04 — Contracts Foundation
 - **Status:** IN_PROGRESS
 
 ## Completed
 
-W00-WU01 ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ Project Governance & Repositories is COMPLETE.
-
-Completed foundation includes:
-
-- GitHub organization governance and security baseline.
-- exactly eight official private repositories.
-- permanent `atlazora-project` project memory.
-- project governance structure and templates.
-- Phase ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ Wave ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ Work Unit ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ Task hierarchy.
-- Definition of Ready, Definition of Done, Handoff, ADR, WIP, commit and PR standards.
-- 13 approved planning Phases.
-- 18 execution Waves.
-- approved Phase 01ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“13 planning preservation.
-- detailed Phase 01ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“13 planning formalization.
-- product policy consolidation.
-- ADR-0001 through ADR-0025, all Accepted.
-- required GitHub labels and milestones.
-- GitHub Project execution board.
-- Governance Validation CI.
-- W00-WU01 Final Definition of Done audit.
-- W00-WU01 Final Handoff.
+- W00-WU01 — Project Governance & Repositories: COMPLETE.
+- W00-WU02 — Local Development Platform: COMPLETE.
+- W00-WU03 — Go Core Foundation: COMPLETE.
 
 ## Current Objective
 
-No primary Work Unit is currently active. W00-WU03 is COMPLETE.
+Close W00-WU04 — Contracts Foundation after successful implementation, verification, security review, project-memory update, Formal Handoff, and Governance Validation.
 
 ## Active Repositories
 
-- `atlazora-project`
-- other official repositories enter implementation only through their relevant Work Units.
+- `atlazora-project` — governance and permanent project memory.
+- `atlazora-contracts` — W00-WU04 executable contract implementation.
+
+## W00-WU04 Closure Candidate
+
+- Contracts implementation commit: `4f1c156520e861e44fddfcad0904d327b1f97b2d`.
+- Contracts repository local/remote synchronization: PASS.
+- Contracts Validation run: `33664315992`.
+- Contracts Validation result: `completed / success`.
+- Contract/schema validation: PASS.
+- Compatibility/breaking verification: PASS.
+- Dependency audit: PASS with 0 vulnerabilities.
+- Secret review: PASS with 0 detected matches.
+- W00-WU05 scope separation: PASS.
+- Formal Handoff: `handoffs/W00-WU04-final-handoff.md`.
+- Final governance closure: pending closure-candidate commit and Governance Validation.
 
 ## Blockers
 
-No current blocker is recorded. W00-WU04 — Contracts Foundation is IN_PROGRESS.
+No blocking implementation or security issue is currently recorded.
 
-GitHub private-repository branch protection/ruleset limitations under the current plan remain documented and non-blocking.
-
-The ChatGPT GitHub connector private-repository visibility limitation remains non-blocking because authenticated local GitHub CLI access works.
+The ChatGPT GitHub connector private-repository visibility limitation remains non-blocking because authenticated local GitHub CLI access successfully verifies the private repositories and workflows.
 
 ## Active Decisions / ADRs
 
-25 ADRs are Accepted.
+ADR-0001 through ADR-0028 are Accepted.
+
+W00-WU04 directly relies on ADR-0010, ADR-0021, ADR-0026, ADR-0027, and ADR-0028.
 
 See `decisions/README.md`.
 
@@ -57,50 +53,51 @@ See `decisions/README.md`.
 
 | Environment | State |
 |---|---|
-| Local | Local development platform implemented and verified |
+| Local | Local development platform, Go Core foundation, and Contracts foundation implemented and verified |
 | Dev | NOT PROVISIONED |
 | Staging | NOT PROVISIONED |
 | Production | NOT PROVISIONED |
 
 ## Last Completed Work
 
-W00-WU03 Ã¢â‚¬â€ Go Core Foundation.
-
-Review evidence:
-
-- commit `201faca2db352fa59ff863906ddb1c0882eaf90a`
-- Governance Validation run `33602895826`
-- result `completed / success`
+W00-WU03 — Go Core Foundation.
 
 Formal Handoff:
 
 - `handoffs/W00-WU03-final-handoff.md`
 
+## Current Work
+
+W00-WU04 — Contracts Foundation is the only primary Work Unit currently IN_PROGRESS.
+
+Its implementation is complete and verified. It is now a governance closure candidate.
+
 ## Next Action
 
-Establish and verify the Definition of Ready for W00-WU04 Ã¢â‚¬â€ Contracts Foundation. Do not mark W00-WU04 IN_PROGRESS until that DoR passes.
+Commit and push the W00-WU04 governance closure candidate, verify Governance Validation succeeds, then perform the final W00-WU04 COMPLETE transition.
 
-W00-WU03 is COMPLETE with Final Handoff recorded. No primary Work Unit is currently IN_PROGRESS.
+Do not start W00-WU05 until W00-WU04 is formally COMPLETE and W00-WU05 passes its own Definition of Ready.
 
 ## Required Reading
 
 1. `README.md`
 2. `PROJECT_STATE.md`
-3. `handoffs/W00-WU02-final-handoff.md`
+3. `handoffs/W00-WU04-final-handoff.md`
 4. `waves/wave-00/README.md`
-5. `waves/wave-00/W00-WU03-go-core-foundation.md`
+5. `waves/wave-00/W00-WU04-contracts-foundation.md`
 6. `phases/phase-09/README.md`
 7. `product/policies.md`
 8. relevant architecture documents
 9. `decisions/README.md`
-10. relevant ADRs
-11. `templates/WORK_UNIT_TEMPLATE.md`
-12. `templates/DEFINITION_OF_DONE.md`
+10. ADR-0026, ADR-0027, and ADR-0028
+11. `templates/DEFINITION_OF_DONE.md`
 
 ## WIP Guard
 
-W00-WU01 is COMPLETE.
+W00-WU01, W00-WU02, and W00-WU03 are COMPLETE.
 
 W00-WU04 — Contracts Foundation is the only primary Work Unit currently IN_PROGRESS.
+
+W00-WU05 remains PLANNED.
 
 Only one primary Work Unit may be IN_PROGRESS.

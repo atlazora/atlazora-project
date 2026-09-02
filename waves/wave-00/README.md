@@ -137,9 +137,8 @@ Status: `PLANNED`.
 
 ## Current Work
 
-W00-WU03 Ã¢â‚¬â€ Go Core Foundation is the only primary Work Unit currently IN_PROGRESS.
-
-W00-WU01, W00-WU02, and W00-WU03 are COMPLETE with Final Handoffs recorded. W00-WU04 Definition of Ready has passed and implementation is IN_PROGRESS.
+W00-WU04 — Contracts Foundation is the only primary Work Unit currently IN_PROGRESS.
+W00-WU01, W00-WU02, and W00-WU03 are COMPLETE with Final Handoffs recorded. W00-WU04 implementation and verification are complete and it is a governance closure candidate. W00-WU05 remains PLANNED.
 
 ## Completion Target
 
