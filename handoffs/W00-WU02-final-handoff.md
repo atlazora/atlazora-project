@@ -188,17 +188,19 @@ The Work Unit implementation and acceptance record is maintained in `waves/wave-
 
 Implementation and local verification are complete.
 
-Before W00-WU02 is formally marked COMPLETE, the remaining external closure evidence is:
+Final closure evidence:
 
-- successful GitHub Governance Validation for the closure candidate
-- closure commit and applicable CI evidence
+- Closure candidate commit: ec34fdfc64a95123fe86031caa96340a4a448289
+- Governance Validation run: 33608258750
+- Status: completed
+- Conclusion: success
 
 ## Next Work Unit
 
-After W00-WU02 formally reaches COMPLETE, W00-WU03 — Go Core Foundation may transition to READY.
+W00-WU02 is COMPLETE. W00-WU03 — Go Core Foundation is READY for its Definition of Ready confirmation and subsequent execution.
 
 W00-WU03 must not become IN_PROGRESS until its own Definition of Ready is established and implementation begins.
 
 ## Handoff Result
 
-W00-WU02 implementation, local verification, Final Definition of Done audit, project-memory update, and Final Handoff are complete. The Work Unit is in REVIEW pending successful GitHub Governance Validation for the closure candidate.
+W00-WU02 is COMPLETE. Implementation, local verification, Final Definition of Done audit, project-memory update, Final Handoff, and GitHub Governance Validation are complete.

@@ -130,7 +130,7 @@ Approved Work Units:
 12. W00-WU12 â€” Security Baseline
 13. W00-WU13 â€” Foundation Integration Test
 
-W00-WU01 is COMPLETE with its Definition of Done and Final Handoff recorded. W00-WU02 is in `REVIEW` pending final GitHub Governance Validation evidence. No primary Work Unit is currently `IN_PROGRESS`; W00-WU03 remains `PLANNED` until W00-WU02 formally reaches `COMPLETE`.
+W00-WU01 and W00-WU02 are COMPLETE with their Definition of Done and Final Handoffs recorded. W00-WU03 is `READY`. No primary Work Unit is currently `IN_PROGRESS`.
 
 ## W00-WU01 â€” Project Governance & Repositories
 

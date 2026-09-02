@@ -42,8 +42,8 @@ W00 establishes the foundations for:
 | Work Unit | Name | Status |
 |---|---|---|
 | W00-WU01 | Project Governance & Repositories | COMPLETE |
-| W00-WU02 | Local Development Platform | REVIEW |
-| W00-WU03 | Go Core Foundation | PLANNED |
+| W00-WU02 | Local Development Platform | COMPLETE |
+| W00-WU03 | Go Core Foundation | READY |
 | W00-WU04 | Contracts Foundation | PLANNED |
 | W00-WU05 | Event & Outbox Foundation | PLANNED |
 | W00-WU06 | Python Intelligence Foundation | PLANNED |
@@ -139,7 +139,7 @@ Status: `PLANNED`.
 
 `W00-WU02 — Local Development Platform` is the only primary Work Unit currently `IN_PROGRESS`.
 
-W00-WU01 is COMPLETE. W00-WU02 implementation and local verification are complete, and its Final Handoff exists. W00-WU03 remains PLANNED until W00-WU02 formally reaches COMPLETE.
+W00-WU01 and W00-WU02 are COMPLETE with Final Handoffs recorded. W00-WU03 is READY and may begin only after its own Definition of Ready is confirmed.
 
 ## Completion Target
 
