@@ -1,0 +1,80 @@
+name: Feature / Work Unit
+description: Track planned implementation work, Work Units, and platform capabilities.
+title: "[Work] "
+labels:
+  - "type:feature"
+body:
+  - type: input
+    id: work_unit
+    attributes:
+      label: Work Unit
+      description: "Example: W00-WU02"
+      placeholder: W00-WU02
+    validations:
+      required: true
+
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective
+      description: What must this work achieve?
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: Define what is included and explicitly excluded.
+    validations:
+      required: true
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: List prerequisite Work Units, ADRs, contracts, infrastructure, or external dependencies.
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
+      description: Provide verifiable completion criteria.
+      placeholder: |
+        - [ ] Criterion 1
+        - [ ] Criterion 2
+    validations:
+      required: true
+
+  - type: textarea
+    id: repositories
+    attributes:
+      label: Repositories
+      description: Which Atlazora repositories are expected to change?
+    validations:
+      required: true
+
+  - type: textarea
+    id: security
+    attributes:
+      label: Security Considerations
+      description: Authentication, authorization, validation, secrets, abuse cases, audit, or other relevant concerns.
+    validations:
+      required: true
+
+  - type: textarea
+    id: contracts
+    attributes:
+      label: Contracts / Events
+      description: API, OpenAPI, event, schema, or compatibility implications.
+    validations:
+      required: false
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional Context
+    validations:
+      required: false

@@ -1,0 +1,49 @@
+﻿name: Security Work
+description: Track authorized internal security work, findings, and remediation.
+title: "[Security] "
+labels:
+  - "type:security"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not place credentials, secrets, private keys, production tokens, or sensitive exploit material in this issue.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Security Summary
+      description: Describe the security concern at the level appropriate for this private repository.
+    validations:
+      required: true
+
+  - type: textarea
+    id: affected
+    attributes:
+      label: Affected Area
+      description: Repository, component, API, data class, workflow, or infrastructure.
+    validations:
+      required: true
+
+  - type: textarea
+    id: risk
+    attributes:
+      label: Risk / Impact
+      description: Describe confidentiality, integrity, availability, authorization, fraud, abuse, or operational implications.
+    validations:
+      required: true
+
+  - type: textarea
+    id: remediation
+    attributes:
+      label: Required Remediation
+    validations:
+      required: true
+
+  - type: textarea
+    id: verification
+    attributes:
+      label: Verification Plan
+      description: How will remediation be tested and independently verified?
+    validations:
+      required: true
