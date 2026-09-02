@@ -1,7 +1,7 @@
-# W00-WU04 â€” Contracts Foundation
+﻿# W00-WU04 Ã¢â‚¬â€ Contracts Foundation
 
-- **Phase:** Phase 09 â€” Implementation Roadmap
-- **Wave:** W00 â€” Engineering Foundation
+- **Phase:** Phase 09 Ã¢â‚¬â€ Implementation Roadmap
+- **Wave:** W00 Ã¢â‚¬â€ Engineering Foundation
 - **Work Unit:** W00-WU04
 - **Status:** IN_PROGRESS
 - **Primary Repository/Repositories:** `atlazora-contracts`, `atlazora-project`
@@ -51,17 +51,19 @@ Establish the shared, versioned, executable contract foundation for Atlazora so 
 
 ## Dependencies
 
-- W00-WU01 â€” Project Governance & Repositories: COMPLETE.
-- W00-WU02 â€” Local Development Platform: COMPLETE.
-- W00-WU03 â€” Go Core Foundation: COMPLETE.
+- W00-WU01 Ã¢â‚¬â€ Project Governance & Repositories: COMPLETE.
+- W00-WU02 Ã¢â‚¬â€ Local Development Platform: COMPLETE.
+- W00-WU03 Ã¢â‚¬â€ Go Core Foundation: COMPLETE.
 - W00-WU03 Final Handoff: COMPLETE.
 - Official `atlazora-contracts` repository is available.
 - Approved architecture and planning sources are available.
 
 ## Relevant ADRs
 
-- ADR-0010 â€” REST and OpenAPI Versioned Contracts.
-- ADR-0021 â€” Testing & Security in Every Work Unit.
+- ADR-0010 Ã¢â‚¬â€ REST and OpenAPI Versioned Contracts.
+- ADR-0021 — Testing & Security in Every Work Unit.
+- ADR-0026 — Contract Specifications and Validation Toolchain (Accepted).
+- ADR-0027 — CloudEvents Envelope and Event Identifier Convention (Accepted).
 - Existing Accepted ADRs apply where relevant.
 - New material engineering decisions must use the ADR process.
 
