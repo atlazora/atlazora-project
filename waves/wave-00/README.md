@@ -43,7 +43,7 @@ W00 establishes the foundations for:
 |---|---|---|
 | W00-WU01 | Project Governance & Repositories | COMPLETE |
 | W00-WU02 | Local Development Platform | COMPLETE |
-| W00-WU03 | Go Core Foundation | IN_PROGRESS |
+| W00-WU03 | Go Core Foundation | COMPLETE |
 | W00-WU04 | Contracts Foundation | PLANNED |
 | W00-WU05 | Event & Outbox Foundation | PLANNED |
 | W00-WU06 | Python Intelligence Foundation | PLANNED |

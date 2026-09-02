@@ -3,7 +3,7 @@
 - **Last Updated:** 2026-09-02
 - **Current Phase:** Phase 09 â€“ Implementation Roadmap / execution foundation
 - **Current Wave:** W00 â€“ Engineering Foundation
-- **Current Work Unit:** W00-WU03 — Go Core Foundation
+- **Current Work Unit:** None
 - **Status:** IN_PROGRESS
 
 ## Completed
@@ -32,7 +32,7 @@ Completed foundation includes:
 
 ## Current Objective
 
-Implement W00-WU03 — Go Core Foundation from its passed Definition of Ready.
+No primary Work Unit is currently active. W00-WU03 is COMPLETE.
 
 ## Active Repositories
 
@@ -41,7 +41,7 @@ Implement W00-WU03 — Go Core Foundation from its passed Definition of Ready.
 
 ## Blockers
 
-No current blocker is recorded for W00-WU03 execution.
+No current blocker is recorded. W00-WU04 remains PLANNED pending its Definition of Ready.
 
 GitHub private-repository branch protection/ruleset limitations under the current plan remain documented and non-blocking.
 
@@ -64,7 +64,7 @@ See `decisions/README.md`.
 
 ## Last Completed Work
 
-W00-WU02 — Local Development Platform.
+W00-WU03 — Go Core Foundation.
 
 Review evidence:
 
@@ -74,13 +74,13 @@ Review evidence:
 
 Formal Handoff:
 
-- `handoffs/W00-WU01-final-handoff.md`
+- `handoffs/W00-WU03-final-handoff.md`
 
 ## Next Action
 
-Execute W00-WU03 — Go Core Foundation according to its passed Definition of Ready and approved architecture constraints.
+Establish and verify the Definition of Ready for W00-WU04 — Contracts Foundation. Do not mark W00-WU04 IN_PROGRESS until that DoR passes.
 
-W00-WU02 is COMPLETE with Final Handoff recorded. W00-WU03 Definition of Ready has passed and implementation is IN_PROGRESS.
+W00-WU03 is COMPLETE with Final Handoff recorded. No primary Work Unit is currently IN_PROGRESS.
 
 ## Required Reading
 
@@ -101,6 +101,6 @@ W00-WU02 is COMPLETE with Final Handoff recorded. W00-WU03 Definition of Ready h
 
 W00-WU01 is COMPLETE.
 
-W00-WU03 is the only primary Work Unit currently IN_PROGRESS.
+No primary work unit is currently IN_PROGRESS. W00-WU04 remains PLANNED.
 
 Only one primary Work Unit may be IN_PROGRESS.
