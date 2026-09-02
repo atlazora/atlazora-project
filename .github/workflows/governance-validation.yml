@@ -1,0 +1,135 @@
+﻿name: Governance Validation
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  governance-validation:
+    name: governance-validation
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Install YAML validator
+        run: python -m pip install --disable-pip-version-check PyYAML==6.0.2
+
+      - name: Validate YAML files
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import sys
+          import yaml
+
+          files = sorted(
+              list(Path(".github").rglob("*.yml")) +
+              list(Path(".github").rglob("*.yaml"))
+          )
+
+          failed = False
+
+          for path in files:
+              try:
+                  with path.open("r", encoding="utf-8") as f:
+                      yaml.safe_load(f)
+                  print(f"PASS YAML: {path}")
+              except Exception as exc:
+                  failed = True
+                  print(f"FAIL YAML: {path}: {exc}")
+
+          if failed:
+              sys.exit(1)
+          PY
+
+      - name: Validate governance structure
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import sys
+
+          required_files = [
+              "README.md",
+              "PROJECT_STATE.md",
+              "ROADMAP.md",
+              "CHANGELOG.md",
+              "architecture/system-overview.md",
+              "architecture/domain-boundaries.md",
+              "architecture/data-architecture.md",
+              "architecture/event-architecture.md",
+              "architecture/security-architecture.md",
+              "architecture/infrastructure.md",
+              "product/vision.md",
+              "product/v1-scope.md",
+              "product/business-flows.md",
+              "product/policies.md",
+              "templates/ADR_TEMPLATE.md",
+              "templates/WORK_UNIT_TEMPLATE.md",
+              "templates/HANDOFF_TEMPLATE.md",
+              "templates/DEFINITION_OF_DONE.md",
+              "templates/INCIDENT_TEMPLATE.md",
+          ]
+
+          failed = False
+
+          for name in required_files:
+              path = Path(name)
+              if path.is_file() and path.stat().st_size > 0:
+                  print(f"PASS FILE: {name}")
+              else:
+                  failed = True
+                  print(f"FAIL FILE: {name}")
+
+          phase_dirs = sorted(Path("phases").glob("phase-*"))
+          wave_dirs = sorted(Path("waves").glob("wave-*"))
+          template_files = sorted(Path("templates").glob("*.md"))
+
+          checks = [
+              ("phase directories", len(phase_dirs), 13),
+              ("wave directories", len(wave_dirs), 18),
+              ("template files", len(template_files), 5),
+          ]
+
+          for label, actual, expected in checks:
+              if actual == expected:
+                  print(f"PASS COUNT: {label} = {actual}")
+              else:
+                  failed = True
+                  print(
+                      f"FAIL COUNT: {label}: "
+                      f"expected {expected}, got {actual}"
+                  )
+
+          empty_files = [
+              p for p in Path(".").rglob("*")
+              if p.is_file()
+              and ".git" not in p.parts
+              and p.stat().st_size == 0
+          ]
+
+          if empty_files:
+              failed = True
+              for path in empty_files:
+                  print(f"FAIL EMPTY: {path}")
+          else:
+              print("PASS: No empty repository files detected.")
+
+          if failed:
+              sys.exit(1)
+          PY
