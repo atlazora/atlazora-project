@@ -126,9 +126,9 @@ W00-WU01 security scope includes:
 - [x] Definition of Done is formalized.
 - [x] Handoff standard is formalized.
 - [x] ADR lifecycle is formalized.
-- [x] 22 approved architectural decisions are formalized as Accepted ADRs.
+- [x] 25 approved architectural decisions are formalized as Accepted ADRs.
 - [x] Product and architecture baseline documentation exists.
-- [ ] Detailed approved planning content from Phases 01–13 is sufficiently preserved in Git.
+- [x] Detailed approved planning content from Phases 01–13 is sufficiently preserved in Git.
 - [x] GitHub labels are configured.
 - [x] GitHub W00–W17 milestones are configured.
 - [x] GitHub Project Board workflow is configured.
@@ -185,8 +185,7 @@ W00-WU01 is not complete.
 
 Remaining work includes:
 
-- preservation of sufficient detailed approved Phase 01–13 planning decisions
-- final `PROJECT_STATE.md` update after the planning-detail gap is resolved
+- final `PROJECT_STATE.md` completion update after the final verification passes
 - final Definition of Done audit
 - Final Handoff to W00-WU02
 

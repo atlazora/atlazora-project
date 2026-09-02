@@ -16,7 +16,7 @@ All meaningful governance and architecture changes to `atlazora-project` are rec
 - ADR lifecycle standard.
 - 13 planning Phase indexes.
 - 18 implementation Wave indexes.
-- 22 Accepted foundational ADRs.
+- 25 Accepted architectural ADRs: the initial ADR-0001–ADR-0022 baseline plus ADR-0023–ADR-0025 formalized from already-approved Phase 01–13 planning decisions.
 - GitHub execution model.
 - Solo-development WIP rule.
 - Required GitHub labels.
@@ -26,6 +26,12 @@ All meaningful governance and architecture changes to `atlazora-project` are rec
 - GitHub Project `Atlazora Execution`.
 - Project workflow: `Backlog → Ready → In Progress → Review/Test → Done`.
 - Governance Validation GitHub Actions workflow.
+- Approved Phase 01–13 planning source preserved in Git.
+- Detailed Phase 01–13 planning records formalized.
+- Cross-domain approved product policies consolidated.
+- ADR-0023 – Accepted Commercial Terms Are Immutable Historical Truth.
+- ADR-0024 – Order, Payment, and Shipment Have Separate Domain Ownership.
+- ADR-0025 – Admin and Operations Use Approved Application Boundaries.
 
 ### Verified
 
@@ -44,6 +50,8 @@ All meaningful governance and architecture changes to `atlazora-project` are rec
 
 ### Current State
 
-W00-WU01 remains `IN_PROGRESS`.
+W00-WU01 is in `REVIEW`.
 
-The remaining completion gap is preservation of sufficient detailed approved planning content from Phases 01–13, followed by the final Definition of Done audit and formal Handoff to W00-WU02.
+Approved Phase 01–13 planning preservation is complete.
+
+The remaining completion gate is final repository/GitHub/CI verification, the item-by-item Definition of Done audit, final project-memory update, and formal Handoff to W00-WU02.
