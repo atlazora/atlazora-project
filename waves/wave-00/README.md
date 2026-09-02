@@ -41,8 +41,8 @@ W00 establishes the foundations for:
 
 | Work Unit | Name | Status |
 |---|---|---|
-| W00-WU01 | Project Governance & Repositories | IN_PROGRESS |
-| W00-WU02 | Local Development Platform | PLANNED |
+| W00-WU01 | Project Governance & Repositories | COMPLETE |
+| W00-WU02 | Local Development Platform | READY |
 | W00-WU03 | Go Core Foundation | PLANNED |
 | W00-WU04 | Contracts Foundation | PLANNED |
 | W00-WU05 | Event & Outbox Foundation | PLANNED |

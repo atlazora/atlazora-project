@@ -26,6 +26,10 @@ All meaningful governance and architecture changes to `atlazora-project` are rec
 - GitHub Project `Atlazora Execution`.
 - Project workflow: `Backlog → Ready → In Progress → Review/Test → Done`.
 - Governance Validation GitHub Actions workflow.
+- W00-WU01 – Project Governance & Repositories completed.
+- Final W00-WU01 Definition of Done audit completed.
+- Formal W00-WU01 Final Handoff added.
+- W00-WU02 – Local Development Platform moved to READY.
 - Approved Phase 01–13 planning source preserved in Git.
 - Detailed Phase 01–13 planning records formalized.
 - Cross-domain approved product policies consolidated.
@@ -50,8 +54,10 @@ All meaningful governance and architecture changes to `atlazora-project` are rec
 
 ### Current State
 
-W00-WU01 is in `REVIEW`.
+W00-WU01 is `COMPLETE`.
 
-Approved Phase 01–13 planning preservation is complete.
+Its Final Definition of Done audit passed and its formal Handoff is recorded at `handoffs/W00-WU01-final-handoff.md`.
 
-The remaining completion gate is final repository/GitHub/CI verification, the item-by-item Definition of Done audit, final project-memory update, and formal Handoff to W00-WU02.
+W00-WU02 – Local Development Platform is the next Work Unit and is `READY`.
+
+W00-WU02 has not yet entered `IN_PROGRESS`.
