@@ -3,41 +3,38 @@
 - **Last Updated:** 2026-09-02
 - **Current Phase:** Phase 09 — Implementation Roadmap / execution foundation
 - **Current Wave:** W00 — Engineering Foundation
-- **Current Work Unit:** W00-WU04 — Contracts Foundation
-- **Status:** IN_PROGRESS
+- **Current Work Unit:** None
+- **Status:** READY_FOR_NEXT_WORK_UNIT
 
 ## Completed
 
 - W00-WU01 — Project Governance & Repositories: COMPLETE.
 - W00-WU02 — Local Development Platform: COMPLETE.
 - W00-WU03 — Go Core Foundation: COMPLETE.
+- W00-WU04 — Contracts Foundation: COMPLETE.
 
 ## Current Objective
 
-Close W00-WU04 — Contracts Foundation after successful implementation, verification, security review, project-memory update, Formal Handoff, and Governance Validation.
+W00-WU04 — Contracts Foundation is formally closed. No primary Work Unit is currently IN_PROGRESS.
 
 ## Active Repositories
 
 - `atlazora-project` — governance and permanent project memory.
-- `atlazora-contracts` — W00-WU04 executable contract implementation.
+- `atlazora-contracts` — completed W00-WU04 executable contract foundation.
 
-## W00-WU04 Closure Candidate
+## W00-WU04 Final Closure Evidence
 
-- Contracts implementation commit: `4f1c156520e861e44fddfcad0904d327b1f97b2d`.
-- Contracts repository local/remote synchronization: PASS.
-- Contracts Validation run: `33664315992`.
-- Contracts Validation result: `completed / success`.
-- Contract/schema validation: PASS.
-- Compatibility/breaking verification: PASS.
-- Dependency audit: PASS with 0 vulnerabilities.
-- Secret review: PASS with 0 detected matches.
-- W00-WU05 scope separation: PASS.
+- Closure-candidate governance commit: `ebe44cc58570a29296c798f581d8a85c65e8ef38`.
+- Governance Validation run: `33666006532`.
+- Governance Validation result: `completed / success`.
+- Exact SHA match: PASS.
+- Final Definition of Done: PASS.
 - Formal Handoff: `handoffs/W00-WU04-final-handoff.md`.
-- Final governance closure: pending closure-candidate commit and Governance Validation.
+- Final Work Unit state: `COMPLETE`.
 
 ## Blockers
 
-No blocking implementation or security issue is currently recorded.
+No blocking implementation, security, governance, or closure issue is currently recorded.
 
 The ChatGPT GitHub connector private-repository visibility limitation remains non-blocking because authenticated local GitHub CLI access successfully verifies the private repositories and workflows.
 
@@ -45,7 +42,7 @@ The ChatGPT GitHub connector private-repository visibility limitation remains no
 
 ADR-0001 through ADR-0028 are Accepted.
 
-W00-WU04 directly relies on ADR-0010, ADR-0021, ADR-0026, ADR-0027, and ADR-0028.
+W00-WU04 directly relied on ADR-0010, ADR-0021, ADR-0026, ADR-0027, and ADR-0028.
 
 See `decisions/README.md`.
 
@@ -60,23 +57,23 @@ See `decisions/README.md`.
 
 ## Last Completed Work
 
-W00-WU03 — Go Core Foundation.
+W00-WU04 — Contracts Foundation.
 
 Formal Handoff:
 
-- `handoffs/W00-WU03-final-handoff.md`
+- `handoffs/W00-WU04-final-handoff.md`
 
 ## Current Work
 
-W00-WU04 — Contracts Foundation is the only primary Work Unit currently IN_PROGRESS.
+No primary Work Unit is currently IN_PROGRESS.
 
-Its implementation is complete and verified. It is now a governance closure candidate.
+W00-WU05 — Event & Outbox Foundation remains PLANNED.
 
 ## Next Action
 
-Commit and push the W00-WU04 governance closure candidate, verify Governance Validation succeeds, then perform the final W00-WU04 COMPLETE transition.
+Start a new planning/execution context for W00-WU05 — Event & Outbox Foundation and evaluate its Definition of Ready before changing it to IN_PROGRESS.
 
-Do not start W00-WU05 until W00-WU04 is formally COMPLETE and W00-WU05 passes its own Definition of Ready.
+Do not begin W00-WU05 implementation until its own Definition of Ready passes.
 
 ## Required Reading
 
@@ -84,7 +81,7 @@ Do not start W00-WU05 until W00-WU04 is formally COMPLETE and W00-WU05 passes it
 2. `PROJECT_STATE.md`
 3. `handoffs/W00-WU04-final-handoff.md`
 4. `waves/wave-00/README.md`
-5. `waves/wave-00/W00-WU04-contracts-foundation.md`
+5. `waves/wave-00/W00-WU05-event-outbox-foundation.md`
 6. `phases/phase-09/README.md`
 7. `product/policies.md`
 8. relevant architecture documents
@@ -94,9 +91,9 @@ Do not start W00-WU05 until W00-WU04 is formally COMPLETE and W00-WU05 passes it
 
 ## WIP Guard
 
-W00-WU01, W00-WU02, and W00-WU03 are COMPLETE.
+W00-WU01, W00-WU02, W00-WU03, and W00-WU04 are COMPLETE.
 
-W00-WU04 — Contracts Foundation is the only primary Work Unit currently IN_PROGRESS.
+No primary Work Unit is currently IN_PROGRESS.
 
 W00-WU05 remains PLANNED.
 

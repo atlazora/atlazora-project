@@ -44,7 +44,7 @@ W00 establishes the foundations for:
 | W00-WU01 | Project Governance & Repositories | COMPLETE |
 | W00-WU02 | Local Development Platform | COMPLETE |
 | W00-WU03 | Go Core Foundation | COMPLETE |
-| W00-WU04 | Contracts Foundation | IN_PROGRESS |
+| W00-WU04 | Contracts Foundation | COMPLETE |
 | W00-WU05 | Event & Outbox Foundation | PLANNED |
 | W00-WU06 | Python Intelligence Foundation | PLANNED |
 | W00-WU07 | Web Foundation | PLANNED |
@@ -137,9 +137,8 @@ Status: `PLANNED`.
 
 ## Current Work
 
-W00-WU04 — Contracts Foundation is the only primary Work Unit currently IN_PROGRESS.
-W00-WU01, W00-WU02, and W00-WU03 are COMPLETE with Final Handoffs recorded. W00-WU04 implementation and verification are complete and it is a governance closure candidate. W00-WU05 remains PLANNED.
-
+No primary Work Unit is currently IN_PROGRESS.
+W00-WU01, W00-WU02, W00-WU03, and W00-WU04 are COMPLETE with Final Handoffs recorded. W00-WU05 remains PLANNED.
 ## Completion Target
 
 W00 reaches its engineering-platform milestone when the approved W00 Work Units have passed their respective completion gates and the Foundation Integration Test demonstrates sufficient readiness for feature Waves.
