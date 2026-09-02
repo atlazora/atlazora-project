@@ -10,4 +10,6 @@ Use:
 
 If a chat must be split while the same Work Unit continues, create an Interim Handoff. The Work Unit remains `IN_PROGRESS`.
 
-- `W00-WU01-final-handoff.md` – W00-WU01 Project Governance & Repositories – COMPLETE
+- `W00-WU01-final-handoff.md` — W00-WU01 Project Governance & Repositories — COMPLETE
+- `W00-WU02-final-handoff.md` — W00-WU02 Local Development Platform — COMPLETE
+- `W00-WU03-final-handoff.md` — W00-WU03 Go Core Foundation — CLOSURE CANDIDATE
