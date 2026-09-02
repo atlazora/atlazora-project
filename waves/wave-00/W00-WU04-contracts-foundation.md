@@ -1,4 +1,4 @@
-﻿# W00-WU04 Ã¢â‚¬â€ Contracts Foundation
+# W00-WU04 Ã¢â‚¬â€ Contracts Foundation
 
 - **Phase:** Phase 09 Ã¢â‚¬â€ Implementation Roadmap
 - **Wave:** W00 Ã¢â‚¬â€ Engineering Foundation
@@ -64,6 +64,7 @@ Establish the shared, versioned, executable contract foundation for Atlazora so 
 - ADR-0021 — Testing & Security in Every Work Unit.
 - ADR-0026 — Contract Specifications and Validation Toolchain (Accepted).
 - ADR-0027 — CloudEvents Envelope and Event Identifier Convention (Accepted).
+- ADR-0028 — Shared API and Platform Contract Conventions (Accepted).
 - Existing Accepted ADRs apply where relevant.
 - New material engineering decisions must use the ADR process.
 
