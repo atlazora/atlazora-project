@@ -77,9 +77,9 @@ Formal Handoff: `handoffs/W00-WU05-final-handoff.md`.
 
 ## Next Action
 
-W00-WU06 — Python Intelligence Foundation has passed its Definition of Ready and is READY. Do not start implementation until the separate IN_PROGRESS transition.
+Begin W00-WU06 — Python Intelligence Foundation implementation within its approved scope. W00-WU06 is now the current primary Work Unit IN_PROGRESS.
 
-W00-WU05 is formally COMPLETE and W00-WU06 Definition of Ready is PASS. W00-WU06 remains READY until implementation actually begins.
+W00-WU05 is formally COMPLETE and W00-WU06 Definition of Ready is PASS. W00-WU06 is now IN_PROGRESS.
 
 ## Required Reading
 
