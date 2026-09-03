@@ -178,11 +178,11 @@ The boundary must preserve the rule that Python intelligence does not directly m
 
 ## W00-WU07 â€” Web Foundation
 
-Establish the Vue 3 + TypeScript Marketplace/Buyer/Supplier application foundation.
+Establish the React 19 + Next.js 16 + TypeScript Marketplace/Buyer/Supplier application foundation with Tailwind CSS 4, the independent Atlazora Design System, and Atlazora-owned contract/adapter boundaries.
 
 ## W00-WU08 â€” Admin Foundation
 
-Establish the Vue 3 + TypeScript Admin/Operations application foundation.
+Establish the React + TypeScript Admin/Operations application foundation; the exact application framework is finalized during W00-WU08 readiness.
 
 Admin operates through approved APIs/domain behavior rather than direct database manipulation.
 

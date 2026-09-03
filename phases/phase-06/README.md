@@ -18,7 +18,7 @@ The authoritative preservation source is:
 
 Atlazora uses:
 
-- Vue 3 + TypeScript for Web and Admin applications.
+- React + TypeScript for Web and Admin presentation applications; `atlazora-web` uses React 19 + Next.js 16 + Tailwind CSS 4, while the exact `atlazora-admin` application framework is finalized during W00-WU08 readiness.
 - Go for the primary transactional Core.
 - Python for intelligence, analytics, ranking, enrichment, and data-oriented workloads.
 - PostgreSQL as transactional truth.
@@ -87,7 +87,7 @@ The Intelligence repository may expose API and worker processes where needed.
 
 ## Web Architecture
 
-`atlazora-web` is the Vue 3 + TypeScript application for:
+`atlazora-web` is the React 19 + Next.js 16 + TypeScript application for:
 
 - Marketplace.
 - Buyer experience.
@@ -99,7 +99,7 @@ It must not become an independent source of transactional business truth.
 
 ## Admin Architecture
 
-`atlazora-admin` is a separate Vue 3 + TypeScript deployable for administrative and operational workflows.
+`atlazora-admin` is a separate React + TypeScript deployable for administrative and operational workflows. Its exact application framework is finalized during W00-WU08 readiness.
 
 Admin operates through approved application APIs and domain behaviors.
 
