@@ -78,7 +78,7 @@ Formal Handoff: `handoffs/W00-WU06-final-handoff.md`.
 
 ## Next Action
 
-Assess Definition of Ready for W00-WU07 — Web Foundation. W00-WU07 remains PLANNED and is not started.
+W00-WU07 — Web Foundation has passed Definition of Ready and is READY. Do not start implementation until the separate IN_PROGRESS transition is formally reviewed, committed, pushed, and exact-SHA validated.
 
 W00-WU06 is formally COMPLETE. No primary Work Unit is currently IN_PROGRESS.
 

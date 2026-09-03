@@ -47,7 +47,7 @@ W00 establishes the foundations for:
 | W00-WU04 | Contracts Foundation | COMPLETE |
 | W00-WU05 | Event & Outbox Foundation | COMPLETE |
 | W00-WU06 | Python Intelligence Foundation | COMPLETE |
-| W00-WU07 | Web Foundation | PLANNED |
+| W00-WU07 | Web Foundation | READY |
 | W00-WU08 | Admin Foundation | PLANNED |
 | W00-WU09 | Infrastructure Foundation | PLANNED |
 | W00-WU10 | CI/CD & Supply Chain | PLANNED |
@@ -97,7 +97,7 @@ Status: `COMPLETE`.
 
 Establish the React 19 + Next.js 16 + TypeScript Marketplace/Buyer/Supplier Web foundation with Tailwind CSS 4, the independent Atlazora Design System, and Atlazora-owned contract/adapter boundaries.
 
-Status: `PLANNED`.
+Status: `READY`.
 
 ## W00-WU08 ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Admin Foundation
 
@@ -138,7 +138,7 @@ Status: `PLANNED`.
 ## Current Work
 
 No primary Work Unit is currently IN_PROGRESS.
-W00-WU01, W00-WU02, W00-WU03, W00-WU04, W00-WU05, and W00-WU06 are COMPLETE with Final Handoffs recorded. W00-WU07 remains PLANNED.
+W00-WU01, W00-WU02, W00-WU03, W00-WU04, W00-WU05, and W00-WU06 are COMPLETE with Final Handoffs recorded. W00-WU07 has passed Definition of Ready and is READY. Implementation has not started.
 ## Completion Target
 
 W00 reaches its engineering-platform milestone when the approved W00 Work Units have passed their respective completion gates and the Foundation Integration Test demonstrates sufficient readiness for feature Waves.
