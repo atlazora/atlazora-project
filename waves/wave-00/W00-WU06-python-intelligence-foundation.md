@@ -219,7 +219,10 @@ The following implementation decisions are selected for the W00-WU06 foundation 
 - **Python type checker:** mypy selected for W00-WU06.
   - Selection rationale: mypy fits the already approved Python 3.14 + repository-local `venv` + `pip` + `pyproject.toml` foundation without introducing an additional Node/npm toolchain.
   - Pyright remains an approved candidate in the broader testing/security direction but is not selected for W00-WU06.
-  - This decision selects the checker only; exact mypy version and minimum configuration remain implementation details to be verified before they are recorded.
+  - Dependency declaration: use unpinned `mypy` in the existing development dependency group, consistent with the current unpinned `pytest` and `ruff` convention.
+  - Version policy: no exact mypy version pin is selected for this foundation; mypy 2.3.1 is the current verified package-index reference and is not a project pin.
+  - Minimum configuration: use `[tool.mypy]` with `python_version = "3.14"`.
+  - Type-analysis invocation scope: `src` and `tests`; no strict mode, plugins, or additional mypy strictness options are selected for this foundation.
   - W00-WU06 must not silently treat either candidate as selected until the implementation reaches the type-analysis step and the choice is explicitly recorded.
 - **Transactional boundary:** Python remains non-authoritative for Core-owned transactional truth.
 - **Contract boundary:** shared executable contracts remain owned by `atlazora-contracts` and must not be duplicated into `atlazora-intelligence`.
