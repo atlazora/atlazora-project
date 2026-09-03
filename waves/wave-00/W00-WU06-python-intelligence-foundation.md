@@ -215,7 +215,11 @@ The following implementation decisions are selected for the W00-WU06 foundation 
 - **Project/package layout:** `src` layout with the Python package isolated under `src/`.
 - **Testing:** `pytest`, consistent with the approved Phase 10 Python testing direction.
 - **Formatting and linting:** Ruff, selected from the approved Phase 10 candidate/baseline tooling.
-- **Python type analysis:** required by the approved testing/security direction, but the exact checker remains unresolved between mypy and Pyright.
+- **Python type analysis:** required by the approved testing/security direction.
+- **Python type checker:** mypy selected for W00-WU06.
+  - Selection rationale: mypy fits the already approved Python 3.14 + repository-local `venv` + `pip` + `pyproject.toml` foundation without introducing an additional Node/npm toolchain.
+  - Pyright remains an approved candidate in the broader testing/security direction but is not selected for W00-WU06.
+  - This decision selects the checker only; exact mypy version and minimum configuration remain implementation details to be verified before they are recorded.
   - W00-WU06 must not silently treat either candidate as selected until the implementation reaches the type-analysis step and the choice is explicitly recorded.
 - **Transactional boundary:** Python remains non-authoritative for Core-owned transactional truth.
 - **Contract boundary:** shared executable contracts remain owned by `atlazora-contracts` and must not be duplicated into `atlazora-intelligence`.
