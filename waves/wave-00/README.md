@@ -77,7 +77,7 @@ Status: `COMPLETE`.
 
 Establish versioned OpenAPI, event, and shared-contract foundations.
 
-Status: `IN_PROGRESS`.
+Status: `COMPLETE`.
 
 ## W00-WU05 ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Event & Outbox Foundation
 
