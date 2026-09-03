@@ -75,7 +75,7 @@ Priority does not override foundational correctness, security, data-integrity, o
 | W00-WU02 | Local Development Platform | COMPLETE |
 | W00-WU03 | Go Core Foundation | COMPLETE |
 | W00-WU04 | Contracts Foundation | COMPLETE |
-| W00-WU05 | Event & Outbox Foundation | IN_PROGRESS |
+| W00-WU05 | Event & Outbox Foundation | COMPLETE |
 | W00-WU06 | Python Intelligence Foundation | PLANNED |
 | W00-WU07 | Web Foundation | PLANNED |
 | W00-WU08 | Admin Foundation | PLANNED |
@@ -84,7 +84,7 @@ Priority does not override foundational correctness, security, data-integrity, o
 | W00-WU11 | Observability Foundation | PLANNED |
 | W00-WU12 | Security Baseline | PLANNED |
 | W00-WU13 | Foundation Integration Test | PLANNED |
-W00-WU05 implementation and verification are complete and it is a governance closure candidate. It remains `IN_PROGRESS` until the closure-candidate governance commit is pushed and Governance Validation succeeds.
+W00-WU05 — Event & Outbox Foundation is formally COMPLETE with its Final Handoff recorded. W00-WU06 remains PLANNED and must pass its own Definition of Ready before execution.
 
 W00-WU02 must not begin until W00-WU01 passes Definition of Done and produces its Final Handoff.
 

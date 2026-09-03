@@ -157,7 +157,7 @@ Core implementation commit:
 
 `2c9c12f72b720b763bc0ca9e3c75c5bd3006fa39`
 
-The governance closure candidate must now be reviewed, committed, pushed, and pass Governance Validation before W00-WU05 is changed to `COMPLETE`.
+The governance closure candidate was reviewed, committed, pushed, and passed Governance Validation. W00-WU05 is now eligible for and undergoing its final `COMPLETE` status transition.
 
 ## Next Work Unit
 
@@ -179,9 +179,9 @@ W00-WU06 must satisfy its own Definition of Ready before becoming `IN_PROGRESS`.
 
 ## Exact Starting Point
 
-Do not start W00-WU06 yet.
+W00-WU06 remains `PLANNED` and must pass its own Definition of Ready before execution.
 
-First review, commit, and push the W00-WU05 governance closure candidate and verify Governance Validation succeeds. Then perform the final W00-WU05 `COMPLETE` transition.
+W00-WU05 closure-candidate Governance Validation succeeded. Complete the final W00-WU05 governance status transition; W00-WU06 remains subject to its own Definition of Ready.
 
 ## Verification Summary
 
@@ -190,4 +190,4 @@ First review, commit, and push the W00-WU05 governance closure candidate and ver
 - Blocking security issues: none identified.
 - Core Git status: clean.
 - Core local/remote synchronization: PASS.
-- Governance status: pending closure-candidate review, commit, push, and Governance Validation.
+- Governance status: closure-candidate review, commit, push, and Governance Validation completed successfully; final W00-WU05 status transition applied.

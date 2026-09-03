@@ -45,7 +45,7 @@ W00 establishes the foundations for:
 | W00-WU02 | Local Development Platform | COMPLETE |
 | W00-WU03 | Go Core Foundation | COMPLETE |
 | W00-WU04 | Contracts Foundation | COMPLETE |
-| W00-WU05 | Event & Outbox Foundation | IN_PROGRESS |
+| W00-WU05 | Event & Outbox Foundation | COMPLETE |
 | W00-WU06 | Python Intelligence Foundation | PLANNED |
 | W00-WU07 | Web Foundation | PLANNED |
 | W00-WU08 | Admin Foundation | PLANNED |
@@ -85,7 +85,7 @@ Establish Transactional Outbox, idempotent consumption, and foundational asynchr
 
 The exact broker remains open until formally resolved.
 
-Status: `IN_PROGRESS`.
+Status: `COMPLETE`.
 
 ## W00-WU06 ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Python Intelligence Foundation
 
@@ -137,8 +137,8 @@ Status: `PLANNED`.
 
 ## Current Work
 
-W00-WU05 — Event & Outbox Foundation is the only primary Work Unit currently IN_PROGRESS.
-W00-WU01, W00-WU02, W00-WU03, and W00-WU04 are COMPLETE with Final Handoffs recorded. W00-WU05 implementation and verification are complete and it is a governance closure candidate.
+No primary Work Unit is currently IN_PROGRESS.
+W00-WU01, W00-WU02, W00-WU03, W00-WU04, and W00-WU05 are COMPLETE with Final Handoffs recorded. W00-WU06 remains PLANNED.
 ## Completion Target
 
 W00 reaches its engineering-platform milestone when the approved W00 Work Units have passed their respective completion gates and the Foundation Integration Test demonstrates sufficient readiness for feature Waves.
