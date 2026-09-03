@@ -3,7 +3,7 @@
 - **Phase:** Phase 09 — Implementation Roadmap
 - **Wave:** W00 — Engineering Foundation
 - **Work Unit:** W00-WU07
-- **Status:** READY
+- **Status:** IN_PROGRESS
 - **Primary Repository/Repositories:** `atlazora-web`, `atlazora-project`
 - **Contract Dependency Repository:** `atlazora-contracts`
 - **Backend Dependency Repository:** `atlazora-core`
@@ -173,7 +173,7 @@ Before changing status to `READY`, verify:
 
 **Definition of Ready Result:** `PASS`.
 
-W00-WU07 is `READY`. Definition of Ready has passed. Implementation remains unauthorized until the separate `IN_PROGRESS` lifecycle transition is formally reviewed, committed, pushed, and exact-SHA validated.
+W00-WU07 is `IN_PROGRESS`. Definition of Ready remains `PASS`. Implementation may now begin within the approved W00-WU07 scope.
 
 ## Tasks
 
@@ -248,6 +248,6 @@ A formal Handoff is required before changing status to `COMPLETE`.
 
 This file records the formally assessed W00-WU07 Definition of Ready.
 
-W00-WU07 Definition of Ready is `PASS` and the Work Unit is `READY`.
+W00-WU07 Definition of Ready is `PASS` and the Work Unit is `IN_PROGRESS`.
 
-No application implementation, W00-WU08 work, or later Work Unit execution is authorized by the `READY` transition. W00-WU07 implementation requires a separate formal transition to `IN_PROGRESS`.
+W00-WU07 application foundation implementation is authorized only within this Work Unit's approved scope. W00-WU08 work and later Work Unit execution remain unauthorized.

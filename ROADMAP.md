@@ -77,14 +77,14 @@ Priority does not override foundational correctness, security, data-integrity, o
 | W00-WU04 | Contracts Foundation | COMPLETE |
 | W00-WU05 | Event & Outbox Foundation | COMPLETE |
 | W00-WU06 | Python Intelligence Foundation | COMPLETE |
-| W00-WU07 | Web Foundation | READY |
+| W00-WU07 | Web Foundation | IN_PROGRESS |
 | W00-WU08 | Admin Foundation | PLANNED |
 | W00-WU09 | Infrastructure Foundation | PLANNED |
 | W00-WU10 | CI/CD & Supply Chain | PLANNED |
 | W00-WU11 | Observability Foundation | PLANNED |
 | W00-WU12 | Security Baseline | PLANNED |
 | W00-WU13 | Foundation Integration Test | PLANNED |
-W00-WU06 — Python Intelligence Foundation is formally COMPLETE with its Final Handoff recorded. No primary Work Unit is currently IN_PROGRESS. W00-WU07 has passed Definition of Ready and is READY. Implementation has not started.
+W00-WU06 — Python Intelligence Foundation is formally COMPLETE with its Final Handoff recorded. W00-WU07 has passed Definition of Ready and is now IN_PROGRESS.
 
 W00-WU02 must not begin until W00-WU01 passes Definition of Done and produces its Final Handoff.
 
