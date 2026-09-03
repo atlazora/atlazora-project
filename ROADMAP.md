@@ -76,7 +76,7 @@ Priority does not override foundational correctness, security, data-integrity, o
 | W00-WU03 | Go Core Foundation | COMPLETE |
 | W00-WU04 | Contracts Foundation | COMPLETE |
 | W00-WU05 | Event & Outbox Foundation | COMPLETE |
-| W00-WU06 | Python Intelligence Foundation | PLANNED |
+| W00-WU06 | Python Intelligence Foundation | READY |
 | W00-WU07 | Web Foundation | PLANNED |
 | W00-WU08 | Admin Foundation | PLANNED |
 | W00-WU09 | Infrastructure Foundation | PLANNED |
@@ -84,7 +84,7 @@ Priority does not override foundational correctness, security, data-integrity, o
 | W00-WU11 | Observability Foundation | PLANNED |
 | W00-WU12 | Security Baseline | PLANNED |
 | W00-WU13 | Foundation Integration Test | PLANNED |
-W00-WU05 — Event & Outbox Foundation is formally COMPLETE with its Final Handoff recorded. W00-WU06 remains PLANNED and must pass its own Definition of Ready before execution.
+W00-WU05 — Event & Outbox Foundation is formally COMPLETE with its Final Handoff recorded. W00-WU06 has passed its Definition of Ready and is READY. Implementation has not started.
 
 W00-WU02 must not begin until W00-WU01 passes Definition of Done and produces its Final Handoff.
 

@@ -77,9 +77,9 @@ Formal Handoff: `handoffs/W00-WU05-final-handoff.md`.
 
 ## Next Action
 
-Prepare W00-WU06 — Python Intelligence Foundation for its own Definition of Ready. Do not start implementation until that readiness process passes.
+W00-WU06 — Python Intelligence Foundation has passed its Definition of Ready and is READY. Do not start implementation until the separate IN_PROGRESS transition.
 
-Do not start W00-WU06 until W00-WU05 is formally COMPLETE and W00-WU06 passes its own Definition of Ready.
+W00-WU05 is formally COMPLETE and W00-WU06 Definition of Ready is PASS. W00-WU06 remains READY until implementation actually begins.
 
 ## Required Reading
 
