@@ -198,3 +198,26 @@ W00-WU06 must not be changed to `COMPLETE` until all applicable implementation, 
 ## Handoff
 
 A formal Handoff is required before changing status to `COMPLETE`.
+
+## Minimum Python Foundation Decisions
+
+The following implementation decisions are selected for the W00-WU06 foundation baseline only. They do not expand the approved Work Unit scope or pre-select later infrastructure, orchestration, ML-platform, or CI/CD decisions.
+
+- **Python runtime baseline:** Python 3.14.
+  - The foundation targets the Python 3.14 release series.
+  - The local verified implementation runtime is Python 3.14.4.
+  - Patch-level runtime upgrades within the Python 3.14 series remain maintenance changes unless compatibility evidence requires otherwise.
+- **Local environment convention:** standard-library `venv`.
+- **Baseline package installation/dependency mechanism:** `pip` inside the repository-local virtual environment.
+  - No third-party dependency manager such as `uv`, Poetry, or Pipenv is selected by W00-WU06.
+  - This does not prevent a later governed Work Unit from introducing a different approved dependency-management or supply-chain workflow.
+- **Project metadata/configuration:** `pyproject.toml` is the repository-level configuration and Python project metadata surface for the foundation.
+- **Project/package layout:** `src` layout with the Python package isolated under `src/`.
+- **Testing:** `pytest`, consistent with the approved Phase 10 Python testing direction.
+- **Formatting and linting:** Ruff, selected from the approved Phase 10 candidate/baseline tooling.
+- **Python type analysis:** required by the approved testing/security direction, but the exact checker remains unresolved between mypy and Pyright.
+  - W00-WU06 must not silently treat either candidate as selected until the implementation reaches the type-analysis step and the choice is explicitly recorded.
+- **Transactional boundary:** Python remains non-authoritative for Core-owned transactional truth.
+- **Contract boundary:** shared executable contracts remain owned by `atlazora-contracts` and must not be duplicated into `atlazora-intelligence`.
+
+These decisions establish only the minimum reproducible Python foundation needed to proceed with W00-WU06 implementation.
