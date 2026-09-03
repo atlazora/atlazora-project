@@ -75,7 +75,7 @@ Priority does not override foundational correctness, security, data-integrity, o
 | W00-WU02 | Local Development Platform | COMPLETE |
 | W00-WU03 | Go Core Foundation | COMPLETE |
 | W00-WU04 | Contracts Foundation | COMPLETE |
-| W00-WU05 | Event & Outbox Foundation | PLANNED |
+| W00-WU05 | Event & Outbox Foundation | IN_PROGRESS |
 | W00-WU06 | Python Intelligence Foundation | PLANNED |
 | W00-WU07 | Web Foundation | PLANNED |
 | W00-WU08 | Admin Foundation | PLANNED |

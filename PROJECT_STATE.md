@@ -4,7 +4,7 @@
 - **Current Phase:** Phase 09 — Implementation Roadmap / execution foundation
 - **Current Wave:** W00 — Engineering Foundation
 - **Current Work Unit:** W00-WU05 — Event & Outbox Foundation
-- **Status:** READY
+- **Status:** IN_PROGRESS
 
 ## Completed
 
@@ -65,13 +65,13 @@ Formal Handoff:
 
 ## Current Work
 
-No primary Work Unit is currently IN_PROGRESS.
+W00-WU05 is the only primary Work Unit currently IN_PROGRESS.
 
-W00-WU05 — Event & Outbox Foundation is READY. Its Definition of Ready has passed; implementation has not started.
+W00-WU05 — Event & Outbox Foundation is IN_PROGRESS. Its Definition of Ready passed and the Work Unit has formally started.
 
 ## Next Action
 
-Begin W00-WU05 implementation only after the READY governance transition is committed, pushed, and Governance Validation succeeds. Then change W00-WU05 to IN_PROGRESS before modifying application runtime code.
+Execute W00-WU05 — Event & Outbox Foundation within its approved scope and acceptance criteria. Keep the exact event broker and other explicitly unresolved transport decisions open unless formally resolved.
 
 Do not begin W00-WU05 implementation until its own Definition of Ready passes.
 
@@ -93,8 +93,8 @@ Do not begin W00-WU05 implementation until its own Definition of Ready passes.
 
 W00-WU01, W00-WU02, W00-WU03, and W00-WU04 are COMPLETE.
 
-No primary Work Unit is currently IN_PROGRESS.
+W00-WU05 is the only primary Work Unit currently IN_PROGRESS.
 
-W00-WU05 is READY; implementation has not started.
+W00-WU05 is IN_PROGRESS.
 
 Only one primary Work Unit may be IN_PROGRESS.
