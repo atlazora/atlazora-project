@@ -137,8 +137,8 @@ Status: `PLANNED`.
 
 ## Current Work
 
-W00-WU05 is the only primary Work Unit currently IN_PROGRESS.
-W00-WU01, W00-WU02, W00-WU03, and W00-WU04 are COMPLETE with Final Handoffs recorded. W00-WU05 is IN_PROGRESS.
+W00-WU05 — Event & Outbox Foundation is the only primary Work Unit currently IN_PROGRESS.
+W00-WU01, W00-WU02, W00-WU03, and W00-WU04 are COMPLETE with Final Handoffs recorded. W00-WU05 implementation and verification are complete and it is a governance closure candidate.
 ## Completion Target
 
 W00 reaches its engineering-platform milestone when the approved W00 Work Units have passed their respective completion gates and the Foundation Integration Test demonstrates sufficient readiness for feature Waves.

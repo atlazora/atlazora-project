@@ -98,22 +98,22 @@ The foundation must operate against the approved CloudEvents 1.0 event-contract 
 
 ## Acceptance Criteria
 
-- [ ] Transactional changes requiring reliable publication can write their required outbox record atomically with the authoritative PostgreSQL transaction.
-- [ ] A committed transaction does not depend on a synchronous external event broker write for correctness.
-- [ ] Pending outbox records have a defined runtime processing path.
-- [ ] Publisher processing can recover safely from temporary publication/dependency failure.
-- [ ] Retry/redelivery of the same already-created event preserves its approved CloudEvent identity.
-- [ ] Duplicate delivery can be detected using the approved event identity boundary.
-- [ ] Foundational consumer processing is idempotent where duplicate effects are possible.
-- [ ] Consumer processing validates applicable event structure/schema before trusting payload content.
-- [ ] Duplicate or replay processing does not create conflicting ownership of producer-owned transactional truth.
-- [ ] Outbox lag/backlog, failures, retries, and important duplicate/idempotency behavior are observable at the foundation level where applicable.
-- [ ] Applicable tests cover transactional write/outbox consistency, publisher retry, duplicate event delivery, consumer idempotency, event schema/version validation, temporary dependency failure, and failed/retried processing visibility.
-- [ ] Reordering and poison/failing-message behavior are tested where the implemented transport-independent runtime boundary makes them applicable.
-- [ ] No broker/provider, broker topology, DLQ implementation, routing/partition strategy, retention period, or replay configuration is selected without an approved decision.
-- [ ] Shared executable event contracts remain owned by `atlazora-contracts` and are not duplicated in `atlazora-core`.
-- [ ] Security review identifies no unresolved blocking finding.
-- [ ] Required documentation, project-memory updates, verification evidence, and Final Handoff are completed before `COMPLETE`.
+- [x] Transactional changes requiring reliable publication can write their required outbox record atomically with the authoritative PostgreSQL transaction.
+- [x] A committed transaction does not depend on a synchronous external event broker write for correctness.
+- [x] Pending outbox records have a defined runtime processing path.
+- [x] Publisher processing can recover safely from temporary publication/dependency failure.
+- [x] Retry/redelivery of the same already-created event preserves its approved CloudEvent identity.
+- [x] Duplicate delivery can be detected using the approved event identity boundary.
+- [x] Foundational consumer processing is idempotent where duplicate effects are possible.
+- [x] Consumer processing validates applicable event structure/schema before trusting payload content.
+- [x] Duplicate or replay processing does not create conflicting ownership of producer-owned transactional truth.
+- [x] Outbox lag/backlog, failures, retries, and important duplicate/idempotency behavior are observable at the foundation level where applicable.
+- [x] Applicable tests cover transactional write/outbox consistency, publisher retry, duplicate event delivery, consumer idempotency, event schema/version validation, temporary dependency failure, and failed/retried processing visibility.
+- [x] Reordering and poison/failing-message behavior are tested where the implemented transport-independent runtime boundary makes them applicable.
+- [x] No broker/provider, broker topology, DLQ implementation, routing/partition strategy, retention period, or replay configuration is selected without an approved decision.
+- [x] Shared executable event contracts remain owned by `atlazora-contracts` and are not duplicated in `atlazora-core`.
+- [x] Security review identifies no unresolved blocking finding.
+- [x] Required documentation, project-memory updates, verification evidence, and Final Handoff are completed before `COMPLETE`.
 
 ## Definition of Ready
 
@@ -135,20 +135,20 @@ The unresolved final event broker does not block readiness because the approved 
 
 ## Tasks
 
-- [ ] Inspect the current `atlazora-core` persistence/runtime structure before implementation.
-- [ ] Define the minimal transport-independent outbox persistence/runtime design consistent with accepted ADRs.
-- [ ] Implement the PostgreSQL outbox persistence foundation.
-- [ ] Implement atomic transactional-write/outbox-write support.
-- [ ] Implement foundational outbox publisher processing without selecting a final broker.
-- [ ] Implement retry/failure-safe publisher behavior at the approved transport-independent boundary.
-- [ ] Implement foundational idempotent-consumption persistence/processing.
-- [ ] Integrate the approved CloudEvents event identity and contract boundary.
-- [ ] Implement applicable security controls and input/schema validation.
-- [ ] Implement applicable event/outbox/idempotency/failure tests.
-- [ ] Add foundation-level operational diagnostics required by this Work Unit.
-- [ ] Run verification and security review.
-- [ ] Update governance/project memory.
-- [ ] Produce W00-WU05 Final Handoff.
+- [x] Inspect the current `atlazora-core` persistence/runtime structure before implementation.
+- [x] Define the minimal transport-independent outbox persistence/runtime design consistent with accepted ADRs.
+- [x] Implement the PostgreSQL outbox persistence foundation.
+- [x] Implement atomic transactional-write/outbox-write support.
+- [x] Implement foundational outbox publisher processing without selecting a final broker.
+- [x] Implement retry/failure-safe publisher behavior at the approved transport-independent boundary.
+- [x] Implement foundational idempotent-consumption persistence/processing.
+- [x] Integrate the approved CloudEvents event identity and contract boundary.
+- [x] Implement applicable security controls and input/schema validation.
+- [x] Implement applicable event/outbox/idempotency/failure tests.
+- [x] Add foundation-level operational diagnostics required by this Work Unit.
+- [x] Run verification and security review.
+- [x] Update governance/project memory.
+- [x] Produce W00-WU05 Final Handoff.
 
 ## Verification Plan
 
@@ -183,3 +183,140 @@ W00-WU05 must not be changed to `COMPLETE` until its implementation, verificatio
 ## Handoff
 
 A formal Handoff is required before changing status to `COMPLETE`.
+### W00-WU05 Final Definition of Done Audit
+
+#### Product / Domain
+
+- Required domain behavior: N/A — W00-WU05 establishes infrastructure/runtime integration foundations and does not introduce business-domain workflows.
+- Acceptance criteria: PASS for the closure candidate.
+
+#### Data
+
+- PostgreSQL persistence foundation: PASS.
+- Transactional authoritative-write plus outbox-write behavior: PASS.
+- Migration is version-controlled and PostgreSQL-backed verification passed.
+- Data ownership/source-of-truth: PASS — PostgreSQL remains authoritative and producer/domain ownership remains unchanged.
+- Migration execution framework/startup automation: N/A — no framework/tool selection is required by W00-WU05 and none was introduced.
+
+#### Contracts
+
+- CloudEvents 1.0 foundational contract boundary: PASS.
+- UUIDv7 event identity preservation: PASS.
+- Duplicate identity boundary using `source` + `id`: PASS.
+- Executable event-schema ownership: PASS — remains in `atlazora-contracts`.
+- Executable schema duplication into `atlazora-core`: NONE.
+- Concrete Go JSON Schema engine selection: N/A — W00-WU05 requires the mandatory validation-before-handler boundary; executable schema validation remains authoritative in `atlazora-contracts`.
+
+#### Security
+
+- Committed secret review: PASS; no actual committed secret detected.
+- Validation-before-handler security boundary: PASS.
+- SQL-injection surface review: PASS; no dynamic SQL construction detected in the reviewed WU05 runtime.
+- Outbox concurrency/lease ownership review: PASS.
+- Idempotency security boundary: PASS.
+- Sensitive telemetry leakage review: PASS.
+- New dependency security impact: NONE — WU05 introduced no dependency changes.
+- Blocking Critical/High security findings: none identified.
+
+#### Reliability / Distributed Behavior
+
+- Transactional Outbox foundation: PASS.
+- Transport-independent publisher processing: PASS.
+- Temporary publication failure/recovery behavior: PASS.
+- Expired processing lease recovery: PASS.
+- Idempotent-consumption foundation: PASS.
+- Duplicate-delivery suppression: PASS.
+- CloudEvent identity preservation across retry/redelivery: PASS.
+- Broker-specific retry/backoff, DLQ, routing, partitioning, retention, and replay behavior: N/A — final broker remains unresolved and these decisions are explicitly outside W00-WU05.
+- Reordering/poison-message behavior beyond the implemented transport-independent failure/lease boundary: N/A — broker-specific semantics are intentionally deferred.
+
+#### User Experience
+
+- Web UI: N/A — outside W00-WU05.
+- Admin UI: N/A — outside W00-WU05.
+- End-user workflow behavior: N/A — no user-facing feature is introduced.
+
+#### Tests
+
+- Go unit/regression tests: PASS.
+- PostgreSQL-backed integration verification: PASS.
+- Atomic transaction/outbox consistency: PASS.
+- Publisher success/failure/retry lifecycle: PASS.
+- Duplicate event delivery/idempotency: PASS.
+- Rollback behavior: PASS.
+- Event validation-before-handler behavior: PASS.
+- Authoritative contract validation in `atlazora-contracts`: PASS.
+- Operational visibility regression: PASS.
+
+#### Operations
+
+- Ready backlog visibility: PASS.
+- Processing-count visibility: PASS.
+- Failed-pending visibility: PASS.
+- Retried-event visibility: PASS.
+- Consumption-marker visibility: PASS.
+- Oldest-ready lag visibility: PASS.
+- Full metrics/alerts/dashboard/SLO framework: N/A — owned by W00-WU11.
+- Broker operational procedures: N/A — broker/provider remains unresolved.
+
+#### Engineering Quality
+
+- Documentation/comments for foundational runtime boundaries: PASS.
+- Core regression tests: PASS.
+- No WU05 dependency changes: PASS.
+- No executable broker coupling: PASS.
+- No shared executable event-schema duplication: PASS.
+- Relevant implementation/security review: PASS.
+- Blocking P0/P1 bugs: none identified.
+
+#### Project Memory
+
+- `PROJECT_STATE.md`: updated in closure candidate.
+- `ROADMAP.md`: reviewed/updated for closure-candidate consistency.
+- Wave/Work Unit documentation: updated in closure candidate.
+- Formal Handoff: produced in closure candidate.
+- Relevant ADRs remain Accepted; no new material broker/provider decision was made.
+
+#### Performance / Resilience
+
+- Concurrent outbox claim safety using PostgreSQL row locking: PASS.
+- Lease recovery/failure path: PASS.
+- Duplicate/retry resilience: PASS.
+- Numeric performance/capacity targets: N/A — no approved numeric target exists for W00-WU05.
+- Backup/restore/disaster-recovery policy change: N/A — W00-WU05 does not change the approved recovery architecture.
+
+**Final Definition of Done Audit Result:** PASS for closure candidate.
+
+### Implementation and Closure Evidence
+
+- Core repository: `atlazora-core`.
+- Core implementation commit: `2c9c12f72b720b763bc0ca9e3c75c5bd3006fa39`.
+- Core branch: `main`.
+- Core local/remote synchronization: PASS.
+- Core worktree after implementation/security verification: clean.
+- Transactional Outbox foundation: PASS.
+- PostgreSQL persistence: PASS.
+- Atomic authoritative-write plus outbox-write behavior: PASS.
+- Pending outbox processing path: PASS.
+- Transport-independent publisher: PASS.
+- Retry/failure safety: PASS.
+- Idempotent-consumption foundation: PASS.
+- CloudEvents identity preservation: PASS.
+- Validation-before-handler boundary: PASS.
+- Authoritative executable contract validation in `atlazora-contracts`: PASS.
+- Operational visibility foundation: PASS.
+- Real PostgreSQL regression: PASS.
+- Core normal regression: PASS.
+- Final security review: PASS.
+- Blocking Critical/High security findings: none identified.
+- Executable broker coupling: NONE.
+- Dependency changes: NONE.
+- Full observability framework: NOT INTRODUCED.
+- Event broker/provider selection: NONE.
+- Broker topology/partitioning/DLQ/backoff/retention/replay decisions: NONE.
+
+### Closure Candidate
+
+Implementation, PostgreSQL-backed verification, contract-boundary verification, reliability/failure verification, security review, documentation, project-memory preparation, and Formal Handoff requirements pass.
+
+W00-WU05 remains `IN_PROGRESS` until this governance closure candidate is committed, pushed, and Governance Validation succeeds.

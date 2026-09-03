@@ -15,12 +15,13 @@
 
 ## Current Objective
 
-W00-WU04 — Contracts Foundation is formally closed. No primary Work Unit is currently IN_PROGRESS.
+Close W00-WU05 — Event & Outbox Foundation after successful implementation, PostgreSQL-backed verification, contract-boundary verification, security review, project-memory update, Formal Handoff, and Governance Validation.
 
 ## Active Repositories
 
 - `atlazora-project` — governance and permanent project memory.
-- `atlazora-contracts` — completed W00-WU04 executable contract foundation.
+- `atlazora-contracts` — authoritative executable event-contract dependency.
+- `atlazora-core` — W00-WU05 Event & Outbox implementation repository.
 
 ## W00-WU04 Final Closure Evidence
 
@@ -65,28 +66,32 @@ Formal Handoff:
 
 ## Current Work
 
-W00-WU05 is the only primary Work Unit currently IN_PROGRESS.
+W00-WU05 — Event & Outbox Foundation is the only primary Work Unit currently IN_PROGRESS.
 
-W00-WU05 — Event & Outbox Foundation is IN_PROGRESS. Its Definition of Ready passed and the Work Unit has formally started.
+Its implementation, PostgreSQL-backed verification, contract-boundary verification, normal regression, and final security review pass. It is now a governance closure candidate.
+
+Core implementation commit: `2c9c12f72b720b763bc0ca9e3c75c5bd3006fa39`.
+
+Formal Handoff: `handoffs/W00-WU05-final-handoff.md`.
 
 ## Next Action
 
-Execute W00-WU05 — Event & Outbox Foundation within its approved scope and acceptance criteria. Keep the exact event broker and other explicitly unresolved transport decisions open unless formally resolved.
+Review, commit, and push the W00-WU05 governance closure candidate, verify Governance Validation succeeds, then perform the final W00-WU05 COMPLETE transition.
 
-Do not begin W00-WU05 implementation until its own Definition of Ready passes.
+Do not start W00-WU06 until W00-WU05 is formally COMPLETE and W00-WU06 passes its own Definition of Ready.
 
 ## Required Reading
 
 1. `README.md`
 2. `PROJECT_STATE.md`
-3. `handoffs/W00-WU04-final-handoff.md`
+3. `handoffs/W00-WU05-final-handoff.md`
 4. `waves/wave-00/README.md`
 5. `waves/wave-00/W00-WU05-event-outbox-foundation.md`
 6. `phases/phase-09/README.md`
 7. `product/policies.md`
 8. relevant architecture documents
 9. `decisions/README.md`
-10. ADR-0026, ADR-0027, and ADR-0028
+10. ADR-0007, ADR-0008, ADR-0009, and ADR-0027
 11. `templates/DEFINITION_OF_DONE.md`
 
 ## WIP Guard

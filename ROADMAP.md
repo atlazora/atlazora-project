@@ -84,6 +84,7 @@ Priority does not override foundational correctness, security, data-integrity, o
 | W00-WU11 | Observability Foundation | PLANNED |
 | W00-WU12 | Security Baseline | PLANNED |
 | W00-WU13 | Foundation Integration Test | PLANNED |
+W00-WU05 implementation and verification are complete and it is a governance closure candidate. It remains `IN_PROGRESS` until the closure-candidate governance commit is pushed and Governance Validation succeeds.
 
 W00-WU02 must not begin until W00-WU01 passes Definition of Done and produces its Final Handoff.
 
