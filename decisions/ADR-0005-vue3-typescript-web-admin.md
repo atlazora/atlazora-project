@@ -1,6 +1,6 @@
 ﻿# ADR-0005 — Vue 3 and TypeScript for Web and Admin
 
-- **Status:** Accepted
+- **Status:** Superseded
 - **Date:** 2026-09-02
 - **Decision Owners:** Atlazora
 - **Related Phase:** Phase 06 — Target Architecture
@@ -49,4 +49,4 @@ Both repositories require frontend CI, dependency scanning, testing, build, and 
 
 ## Supersession
 
-None.
+Superseded by ADR-0029 — React and TypeScript Web Presentation Architecture.

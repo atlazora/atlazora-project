@@ -14,13 +14,13 @@ The approved approach is:
 
 ### `atlazora-web`
 
-Vue 3 + TypeScript application for Marketplace, Buyer, and Supplier experiences.
+React 19 + Next.js 16 + TypeScript application for Marketplace, Buyer, and Supplier experiences, with Tailwind CSS 4 and the independent Atlazora Design System.
 
 It consumes approved platform APIs/contracts and does not own authoritative transactional state.
 
 ### `atlazora-admin`
 
-Vue 3 + TypeScript application for administrative and operational workflows.
+React + TypeScript application for administrative and operational workflows. Its exact application framework is finalized during W00-WU08 readiness and implementation planning.
 
 Admin must operate through approved application APIs and domain behavior.
 

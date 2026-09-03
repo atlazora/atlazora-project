@@ -95,13 +95,13 @@ Status: `COMPLETE`.
 
 ## W00-WU07 ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Web Foundation
 
-Establish the Vue 3 + TypeScript Marketplace/Buyer/Supplier Web foundation.
+Establish the React 19 + Next.js 16 + TypeScript Marketplace/Buyer/Supplier Web foundation with Tailwind CSS 4, the independent Atlazora Design System, and Atlazora-owned contract/adapter boundaries.
 
 Status: `PLANNED`.
 
 ## W00-WU08 ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Admin Foundation
 
-Establish the Vue 3 + TypeScript Admin/Operations foundation using approved APIs/domain behavior.
+Establish the React + TypeScript Admin/Operations foundation using approved APIs/domain behavior; the exact application framework is finalized during W00-WU08 readiness.
 
 Status: `PLANNED`.
 

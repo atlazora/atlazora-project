@@ -1,11 +1,11 @@
 # ADR-0029 — React and TypeScript Web Presentation Architecture
 
-- **Status:** Proposed
+- **Status:** Accepted
 - **Date:** 2026-09-03
 - **Related Phase:** Phase 06 — Target Architecture
 - **Related Waves:** W00-W17
 - **Related Work Units:** W00-WU07 — Web Foundation; W00-WU08 — Admin Foundation
-- **Supersedes:** ADR-0005 if accepted
+- **Supersedes:** ADR-0005
 
 ## Context
 
@@ -161,11 +161,11 @@ The exact application framework for atlazora-admin, such as Next.js or React/Vit
 
 ## Supersession
 
-If accepted, ADR-0029 supersedes ADR-0005.
+ADR-0029 supersedes ADR-0005.
 
-ADR-0005 remains preserved in Git as historical project memory and will be marked Superseded.
+ADR-0005 remains preserved in Git as historical project memory and is marked Superseded.
 
-Until ADR-0029 is accepted, ADR-0005 remains the current Accepted frontend architecture decision.
+ADR-0029 is now the current Accepted frontend architecture decision.
 
 ## Consequences
 
@@ -179,7 +179,7 @@ Until ADR-0029 is accepted, ADR-0005 remains the current Accepted frontend archi
 
 ### Negative / Trade-offs
 
-- ADR-0005 requires formal supersession if this ADR is accepted.
+- ADR-0005 is formally superseded by this ADR.
 - Current governance documents that explicitly identify Vue require controlled reconciliation.
 - React/Next.js dependency, build, security, and operational conventions become part of the Web foundation.
 - Admin framework selection remains a separate W00-WU08 readiness decision.

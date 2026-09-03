@@ -32,8 +32,8 @@ Atlazora has exactly eight official repositories at the W00-WU01 baseline:
 |---|---|
 | `Atlazora-original-laravel` | Legacy/reference source only |
 | `atlazora-project` | Project memory and governance |
-| `atlazora-web` | Vue 3 + TypeScript Marketplace / Buyer / Supplier |
-| `atlazora-admin` | Vue 3 + TypeScript Admin / Operations |
+| `atlazora-web` | React 19 + Next.js 16 + TypeScript Marketplace / Buyer / Supplier |
+| `atlazora-admin` | React + TypeScript Admin / Operations; application framework finalized in W00-WU08 |
 | `atlazora-core` | Go modular transactional core |
 | `atlazora-intelligence` | Python intelligence and data workloads |
 | `atlazora-contracts` | OpenAPI, events, shared contracts |
