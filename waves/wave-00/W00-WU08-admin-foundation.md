@@ -1,12 +1,12 @@
 # W00-WU08 — Admin Foundation
 
-- **Status:** IN_PROGRESS
+- **Status:** COMPLETE
 - **Wave:** W00 — Engineering Foundation
 - **Target Repository:** `atlazora-admin`
 - **Architecture:** React + TypeScript + Vite
 - **Required ADRs:** ADR-0025, ADR-0029, ADR-0030
-- **Primary Work Unit IN_PROGRESS:** W00-WU08
-- **Implementation Authorized:** YES — effective only after this lifecycle transition is committed, pushed, and validated
+- **Primary Work Unit IN_PROGRESS:** NONE
+- **Implementation Authorized:** COMPLETE — implementation delivered and validated
 
 ## Objective
 
@@ -81,17 +81,17 @@ Repository-local tests and checks required to validate the W00-WU08 foundation r
 
 ## Lifecycle Governance
 
-Current lifecycle status: `IN_PROGRESS`.
+Current lifecycle status: `COMPLETE`.
 
 The READY assessment has passed, and W00-WU08 is transitioning into active execution under the single-primary-Work-Unit rule.
 
-W00-WU08 is the sole primary Work Unit currently `IN_PROGRESS`.
+W00-WU08 is no longer an active primary Work Unit; its lifecycle status is `COMPLETE`.
 
 Implementation is authorized only after this W00-WU08 `READY -> IN_PROGRESS` governance transition is committed, pushed, and validated according to repository governance.
 
 ## Active Execution State
 
-W00-WU08 is the sole primary Work Unit `IN_PROGRESS`.
+W00-WU08 is `COMPLETE`. No primary Work Unit is currently `IN_PROGRESS`.
 
 After this governance transition is committed, pushed, and validated:
 
@@ -100,3 +100,15 @@ After this governance transition is committed, pushed, and validated:
 - `atlazora-contracts` remains authoritative;
 - backend and domain authorization remain authoritative;
 - W00-WU09 through W00-WU13 remain outside W00-WU08 ownership.
+
+## Final Closure Evidence
+
+- **Final Admin implementation SHA:** `c2f3808908f23276b4582255b61b917f6521ac96`
+- **Validated Admin CI Run:** `33902599043`
+- **Admin CI result:** `completed / success`
+- **Implementation readiness:** PASS
+- **Remaining implementation gaps:** 0
+- **Primary Work Unit IN_PROGRESS after closure:** NONE
+- **W00-WU09 lifecycle after this closure:** PLANNED
+- **WU09 implementation authorization:** NOT GRANTED by this closure
+- **Final handoff:** `handoffs/W00-WU08-final-handoff.md`

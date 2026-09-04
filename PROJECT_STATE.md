@@ -18,7 +18,7 @@
 
 ## Current Objective
 
-W00-WU07 — Web Foundation is formally COMPLETE. No primary Work Unit is currently IN_PROGRESS.
+W00-WU08 — Admin Foundation is formally COMPLETE. No primary Work Unit is currently IN_PROGRESS.
 
 ## Active Repositories
 
@@ -71,7 +71,7 @@ Formal Handoff: `handoffs/W00-WU07-final-handoff.md`.
 
 ## Current Work
 
-W00-WU08 — Admin Foundation is the sole primary Work Unit currently IN_PROGRESS.
+W00-WU08 — Admin Foundation is formally COMPLETE. No primary Work Unit is currently IN_PROGRESS.
 
 W00-WU07 — Web Foundation is formally COMPLETE with its Final Handoff recorded.
 
@@ -81,9 +81,9 @@ Formal Handoff: `handoffs/W00-WU07-final-handoff.md`.
 
 ## Next Action
 
-W00-WU08 — Admin Foundation is formally IN_PROGRESS. Implementation is authorized only after this READY -> IN_PROGRESS governance transition is committed, pushed, and validated.
+W00-WU08 — Admin Foundation is formally COMPLETE. W00-WU09 — Infrastructure Foundation remains PLANNED and requires a separate governed assessment before any lifecycle transition or implementation authorization.
 
-W00-WU07 is formally COMPLETE. W00-WU08 is the sole primary Work Unit IN_PROGRESS.
+W00-WU07 and W00-WU08 are formally COMPLETE. No primary Work Unit is currently IN_PROGRESS.
 
 ## Required Reading
 
@@ -101,12 +101,12 @@ W00-WU07 is formally COMPLETE. W00-WU08 is the sole primary Work Unit IN_PROGRES
 
 ## WIP Guard
 
-W00-WU01, W00-WU02, W00-WU03, W00-WU04, W00-WU05, W00-WU06, and W00-WU07 are COMPLETE.
+W00-WU01, W00-WU02, W00-WU03, W00-WU04, W00-WU05, W00-WU06, W00-WU07, and W00-WU08 are COMPLETE.
 
-W00-WU08 — Admin Foundation is the sole primary Work Unit currently IN_PROGRESS.
+W00-WU08 — Admin Foundation is COMPLETE. No primary Work Unit is currently IN_PROGRESS.
 
 W00-WU07 is COMPLETE.
 
-W00-WU08 is IN_PROGRESS. Implementation is authorized only after this governance transition is committed, pushed, and validated.
+W00-WU08 is COMPLETE. W00-WU09 remains PLANNED and is not authorized for implementation.
 
 Only one primary Work Unit may be IN_PROGRESS.

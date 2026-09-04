@@ -78,13 +78,13 @@ Priority does not override foundational correctness, security, data-integrity, o
 | W00-WU05 | Event & Outbox Foundation | COMPLETE |
 | W00-WU06 | Python Intelligence Foundation | COMPLETE |
 | W00-WU07 | Web Foundation | COMPLETE |
-| W00-WU08 | Admin Foundation | IN_PROGRESS |
+| W00-WU08 | Admin Foundation | COMPLETE |
 | W00-WU09 | Infrastructure Foundation | PLANNED |
 | W00-WU10 | CI/CD & Supply Chain | PLANNED |
 | W00-WU11 | Observability Foundation | PLANNED |
 | W00-WU12 | Security Baseline | PLANNED |
 | W00-WU13 | Foundation Integration Test | PLANNED |
-W00-WU07 — Web Foundation is formally COMPLETE with its Final Handoff recorded. W00-WU08 — Admin Foundation is the sole primary Work Unit IN_PROGRESS; implementation is authorized only after this lifecycle transition is committed, pushed, and validated.
+W00-WU07 — Web Foundation and W00-WU08 — Admin Foundation are formally COMPLETE with Final Handoffs recorded. No primary Work Unit is currently IN_PROGRESS. W00-WU09 — Infrastructure Foundation remains PLANNED.
 
 W00-WU02 must not begin until W00-WU01 passes Definition of Done and produces its Final Handoff.
 

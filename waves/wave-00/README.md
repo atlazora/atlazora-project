@@ -48,7 +48,7 @@ W00 establishes the foundations for:
 | W00-WU05 | Event & Outbox Foundation | COMPLETE |
 | W00-WU06 | Python Intelligence Foundation | COMPLETE |
 | W00-WU07 | Web Foundation | COMPLETE |
-| W00-WU08 | Admin Foundation | IN_PROGRESS |
+| W00-WU08 | Admin Foundation | COMPLETE |
 | W00-WU09 | Infrastructure Foundation | PLANNED |
 | W00-WU10 | CI/CD & Supply Chain | PLANNED |
 | W00-WU11 | Observability Foundation | PLANNED |
@@ -103,7 +103,7 @@ Status: `COMPLETE`.
 
 Establish the React + TypeScript + Vite Admin/Operations foundation using approved APIs/domain behavior, authoritative contracts, and the application boundaries established by ADR-0025, ADR-0029, and ADR-0030.
 
-Status: `IN_PROGRESS`.
+Status: `COMPLETE`.
 
 ## W00-WU09 — Infrastructure Foundation
 
@@ -137,8 +137,8 @@ Status: `PLANNED`.
 
 ## Current Work
 
-W00-WU08 — Admin Foundation is the sole primary Work Unit currently IN_PROGRESS. W00-WU07 — Web Foundation is COMPLETE.
-W00-WU01, W00-WU02, W00-WU03, W00-WU04, W00-WU05, W00-WU06, and W00-WU07 are COMPLETE with Final Handoffs recorded. W00-WU08 is the sole primary Work Unit IN_PROGRESS.
+W00-WU08 — Admin Foundation is COMPLETE. W00-WU07 — Web Foundation is COMPLETE. No primary Work Unit is currently IN_PROGRESS.
+W00-WU01, W00-WU02, W00-WU03, W00-WU04, W00-WU05, W00-WU06, W00-WU07, and W00-WU08 are COMPLETE with Final Handoffs recorded. W00-WU09 remains PLANNED.
 ## Completion Target
 
 W00 reaches its engineering-platform milestone when the approved W00 Work Units have passed their respective completion gates and the Foundation Integration Test demonstrates sufficient readiness for feature Waves.
