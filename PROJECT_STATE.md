@@ -14,10 +14,11 @@
 - W00-WU04 — Contracts Foundation: COMPLETE.
 - W00-WU05 — Event & Outbox Foundation: COMPLETE.
 - W00-WU06 — Python Intelligence Foundation: COMPLETE.
+- W00-WU07 — Web Foundation: COMPLETE.
 
 ## Current Objective
 
-W00-WU06 — Python Intelligence Foundation is formally COMPLETE. No primary Work Unit is currently IN_PROGRESS.
+W00-WU07 — Web Foundation is formally COMPLETE. No primary Work Unit is currently IN_PROGRESS.
 
 ## Active Repositories
 
@@ -60,27 +61,29 @@ See `decisions/README.md`.
 
 ## Last Completed Work
 
-W00-WU04 — Contracts Foundation.
+W00-WU07 — Web Foundation.
 
-Formal Handoff:
+Implementation repository: `atlazora-web`.
 
-- `handoffs/W00-WU04-final-handoff.md`
+Web implementation final commit: `62087dc6391cf818c416d8adf4c0f8c4025b5ea8`.
+
+Formal Handoff: `handoffs/W00-WU07-final-handoff.md`.
 
 ## Current Work
 
 No primary Work Unit is currently IN_PROGRESS.
 
-W00-WU06 — Python Intelligence Foundation is formally COMPLETE with its Final Handoff recorded.
+W00-WU07 — Web Foundation is formally COMPLETE with its Final Handoff recorded.
 
-Intelligence final commit: `e7309277ebd22ced968dc8f041334d638bb12a62`.
+Web implementation final commit: `62087dc6391cf818c416d8adf4c0f8c4025b5ea8`.
 
-Formal Handoff: `handoffs/W00-WU06-final-handoff.md`.
+Formal Handoff: `handoffs/W00-WU07-final-handoff.md`.
 
 ## Next Action
 
-Begin W00-WU07 — Web Foundation implementation within its approved scope. W00-WU07 is now the current primary Work Unit IN_PROGRESS.
+Assess W00-WU08 — Admin Foundation against its Definition of Ready. W00-WU08 remains PLANNED and implementation is not authorized until its own readiness and lifecycle transition pass.
 
-W00-WU06 is formally COMPLETE and W00-WU07 Definition of Ready is PASS. W00-WU07 is now IN_PROGRESS.
+W00-WU07 is formally COMPLETE. W00-WU08 remains PLANNED.
 
 ## Required Reading
 
@@ -98,10 +101,12 @@ W00-WU06 is formally COMPLETE and W00-WU07 Definition of Ready is PASS. W00-WU07
 
 ## WIP Guard
 
-W00-WU01, W00-WU02, W00-WU03, W00-WU04, W00-WU05, and W00-WU06 are COMPLETE.
+W00-WU01, W00-WU02, W00-WU03, W00-WU04, W00-WU05, W00-WU06, and W00-WU07 are COMPLETE.
 
 No primary Work Unit is currently IN_PROGRESS.
 
-W00-WU06 is COMPLETE.
+W00-WU07 is COMPLETE.
+
+W00-WU08 remains PLANNED and is not authorized for implementation until its own Definition of Ready and lifecycle transition pass.
 
 Only one primary Work Unit may be IN_PROGRESS.
