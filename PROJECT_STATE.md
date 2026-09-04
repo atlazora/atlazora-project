@@ -71,7 +71,7 @@ Formal Handoff: `handoffs/W00-WU07-final-handoff.md`.
 
 ## Current Work
 
-No primary Work Unit is currently IN_PROGRESS.
+W00-WU08 — Admin Foundation is the sole primary Work Unit currently IN_PROGRESS.
 
 W00-WU07 — Web Foundation is formally COMPLETE with its Final Handoff recorded.
 
@@ -81,9 +81,9 @@ Formal Handoff: `handoffs/W00-WU07-final-handoff.md`.
 
 ## Next Action
 
-W00-WU08 — Admin Foundation has passed its Definition of Ready assessment and is formally READY. Implementation remains unauthorized until the separate READY -> IN_PROGRESS lifecycle transition is reviewed, committed, pushed, and validated.
+W00-WU08 — Admin Foundation is formally IN_PROGRESS. Implementation is authorized only after this READY -> IN_PROGRESS governance transition is committed, pushed, and validated.
 
-W00-WU07 is formally COMPLETE. W00-WU08 is formally READY.
+W00-WU07 is formally COMPLETE. W00-WU08 is the sole primary Work Unit IN_PROGRESS.
 
 ## Required Reading
 
@@ -103,10 +103,10 @@ W00-WU07 is formally COMPLETE. W00-WU08 is formally READY.
 
 W00-WU01, W00-WU02, W00-WU03, W00-WU04, W00-WU05, W00-WU06, and W00-WU07 are COMPLETE.
 
-No primary Work Unit is currently IN_PROGRESS.
+W00-WU08 — Admin Foundation is the sole primary Work Unit currently IN_PROGRESS.
 
 W00-WU07 is COMPLETE.
 
-W00-WU08 is READY and is not authorized for implementation until its separate READY -> IN_PROGRESS lifecycle transition passes.
+W00-WU08 is IN_PROGRESS. Implementation is authorized only after this governance transition is committed, pushed, and validated.
 
 Only one primary Work Unit may be IN_PROGRESS.

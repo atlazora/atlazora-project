@@ -1,12 +1,12 @@
 # W00-WU08 — Admin Foundation
 
-- **Status:** READY
+- **Status:** IN_PROGRESS
 - **Wave:** W00 — Engineering Foundation
 - **Target Repository:** `atlazora-admin`
 - **Architecture:** React + TypeScript + Vite
 - **Required ADRs:** ADR-0025, ADR-0029, ADR-0030
-- **Primary Work Unit IN_PROGRESS:** NONE
-- **Implementation Authorized:** NO
+- **Primary Work Unit IN_PROGRESS:** W00-WU08
+- **Implementation Authorized:** YES — effective only after this lifecycle transition is committed, pushed, and validated
 
 ## Objective
 
@@ -81,20 +81,22 @@ Repository-local tests and checks required to validate the W00-WU08 foundation r
 
 ## Lifecycle Governance
 
-Current lifecycle status: `READY`.
+Current lifecycle status: `IN_PROGRESS`.
 
-This READY state confirms readiness only. It does not authorize implementation.
+The READY assessment has passed, and W00-WU08 is transitioning into active execution under the single-primary-Work-Unit rule.
 
-No primary Work Unit is currently `IN_PROGRESS`.
+W00-WU08 is the sole primary Work Unit currently `IN_PROGRESS`.
 
-Implementation may begin only after a separate W00-WU08 `READY -> IN_PROGRESS` lifecycle transition is explicitly reviewed, committed, pushed, and validated according to repository governance.
+Implementation is authorized only after this W00-WU08 `READY -> IN_PROGRESS` governance transition is committed, pushed, and validated according to repository governance.
 
-## Next Lifecycle Decision
+## Active Execution State
 
-Review W00-WU08 for the separate `READY -> IN_PROGRESS` transition.
+W00-WU08 is the sole primary Work Unit `IN_PROGRESS`.
 
-Until that transition is completed:
+After this governance transition is committed, pushed, and validated:
 
-- implementation is not authorized;
-- no W00-WU08 application code should be introduced under this governance transition;
+- W00-WU08 implementation is authorized within the approved foundation scope;
+- implementation must remain within ADR-0025, ADR-0029, and ADR-0030 boundaries;
+- `atlazora-contracts` remains authoritative;
+- backend and domain authorization remain authoritative;
 - W00-WU09 through W00-WU13 remain outside W00-WU08 ownership.
