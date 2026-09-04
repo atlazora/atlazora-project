@@ -81,9 +81,9 @@ Formal Handoff: `handoffs/W00-WU07-final-handoff.md`.
 
 ## Next Action
 
-Assess W00-WU08 — Admin Foundation against its Definition of Ready. W00-WU08 remains PLANNED and implementation is not authorized until its own readiness and lifecycle transition pass.
+W00-WU08 — Admin Foundation has passed its Definition of Ready assessment and is formally READY. Implementation remains unauthorized until the separate READY -> IN_PROGRESS lifecycle transition is reviewed, committed, pushed, and validated.
 
-W00-WU07 is formally COMPLETE. W00-WU08 remains PLANNED.
+W00-WU07 is formally COMPLETE. W00-WU08 is formally READY.
 
 ## Required Reading
 
@@ -107,6 +107,6 @@ No primary Work Unit is currently IN_PROGRESS.
 
 W00-WU07 is COMPLETE.
 
-W00-WU08 remains PLANNED and is not authorized for implementation until its own Definition of Ready and lifecycle transition pass.
+W00-WU08 is READY and is not authorized for implementation until its separate READY -> IN_PROGRESS lifecycle transition passes.
 
 Only one primary Work Unit may be IN_PROGRESS.
