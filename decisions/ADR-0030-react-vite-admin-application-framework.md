@@ -1,6 +1,6 @@
 # ADR-0030: React + Vite Admin Application Framework
 
-- **Status:** Proposed
+- **Status:** Accepted
 - **Date:** 2026-09-04
 - **Decision Owners:** Architecture / Engineering
 - **Scope:** `atlazora-admin`, W00-WU08 Admin Foundation
