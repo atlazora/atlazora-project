@@ -1,4 +1,4 @@
-# W00 ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Engineering Foundation
+# W00 — Engineering Foundation
 
 ## Status
 
@@ -27,7 +27,7 @@ W00 establishes the foundations for:
 
 ## Execution Rules
 
-- Work follows Phase ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ Wave ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ Work Unit ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ Task.
+- Work follows Phase → Wave → Work Unit → Task.
 - Implementation should deliver coherent vertical slices where applicable.
 - Only one primary Work Unit may be `IN_PROGRESS` for solo development.
 - A side task may proceed only when the primary Work Unit is genuinely blocked.
@@ -55,31 +55,31 @@ W00 establishes the foundations for:
 | W00-WU12 | Security Baseline | PLANNED |
 | W00-WU13 | Foundation Integration Test | PLANNED |
 
-## W00-WU01 ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Project Governance & Repositories
+## W00-WU01 — Project Governance & Repositories
 
 Establish permanent Git project memory, repository governance, ADRs, execution standards, GitHub governance, and approved planning preservation.
 
 Current status: `COMPLETE`.
 
-## W00-WU02 ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Local Development Platform
+## W00-WU02 — Local Development Platform
 
 Establish the reproducible local development platform and required local service dependencies.
 
 Status: COMPLETE.
 
-## W00-WU03 ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Go Core Foundation
+## W00-WU03 — Go Core Foundation
 
 Establish the modular Go transactional Core foundation.
 
 Status: `COMPLETE`.
 
-## W00-WU04 ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Contracts Foundation
+## W00-WU04 — Contracts Foundation
 
 Establish versioned OpenAPI, event, and shared-contract foundations.
 
 Status: `COMPLETE`.
 
-## W00-WU05 ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Event & Outbox Foundation
+## W00-WU05 — Event & Outbox Foundation
 
 Establish Transactional Outbox, idempotent consumption, and foundational asynchronous integration behavior.
 
@@ -87,49 +87,49 @@ The exact broker remains open until formally resolved.
 
 Status: `COMPLETE`.
 
-## W00-WU06 ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Python Intelligence Foundation
+## W00-WU06 — Python Intelligence Foundation
 
 Establish Python intelligence/data workload foundations while preserving the transactional ownership boundary.
 
 Status: `COMPLETE`.
 
-## W00-WU07 ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Web Foundation
+## W00-WU07 — Web Foundation
 
 Establish the React 19 + Next.js 16 + TypeScript Marketplace/Buyer/Supplier Web foundation with Tailwind CSS 4, the independent Atlazora Design System, and Atlazora-owned contract/adapter boundaries.
 
 Status: `COMPLETE`.
 
-## W00-WU08 ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Admin Foundation
+## W00-WU08 — Admin Foundation
 
 Establish the React + TypeScript Admin/Operations foundation using approved APIs/domain behavior; the exact application framework is finalized during W00-WU08 readiness.
 
 Status: `PLANNED`.
 
-## W00-WU09 ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Infrastructure Foundation
+## W00-WU09 — Infrastructure Foundation
 
 Establish Terraform/GCP infrastructure foundations according to the approved infrastructure architecture.
 
 Status: `PLANNED`.
 
-## W00-WU10 ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â CI/CD & Supply Chain
+## W00-WU10 — CI/CD & Supply Chain
 
 Establish CI/CD, immutable artifact flow, and applicable supply-chain controls.
 
 Status: `PLANNED`.
 
-## W00-WU11 ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Observability Foundation
+## W00-WU11 — Observability Foundation
 
 Establish foundational logging, metrics, correlation/tracing where applicable, health visibility, and operational diagnostics.
 
 Status: `PLANNED`.
 
-## W00-WU12 ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Security Baseline
+## W00-WU12 — Security Baseline
 
 Establish the engineering security baseline required by subsequent feature Waves.
 
 Status: `PLANNED`.
 
-## W00-WU13 ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Foundation Integration Test
+## W00-WU13 — Foundation Integration Test
 
 Verify the complete W00 foundation as an integrated engineering platform.
 
@@ -145,4 +145,4 @@ W00 reaches its engineering-platform milestone when the approved W00 Work Units 
 
 This corresponds to:
 
-**M0 ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Engineering Platform Ready**
+**M0 — Engineering Platform Ready**
